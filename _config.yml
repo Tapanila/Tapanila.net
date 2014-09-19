@@ -1,0 +1,55 @@
+# Site wide configuration
+
+title:            Tapanila.net
+locale:           en_US
+url:              http://localhost:4000
+
+
+# Jekyll configuration
+
+permalink:   /:title/
+markdown:    kramdown
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+
+# Site owner
+owner:
+  name: Teemu Tapanila
+  avatar: https://scontent-b.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/1173683_10151581249326034_13663214_n.jpg?oh=d8035f751cff6de36c7d369e4068667c&oe=54A3CDAC
+  bio: "Microsoft Azure MVP and Windows Phone developer"
+  email: teemu@tapanila.net
+  disqus-shortname: tapanilanetblog
+  twitter: TapanilaT
+  facebook: Teemu.Tapanila
+  google:
+    plus: TeemuTapanila
+    analytics: 
+    verify: 
+    ad-client: 
+    ad-slot: 
+  bing-verify: 
+  github: Tapanila
+  stackoverflow: http://stackoverflow.com/users/797074/teemu-tapanila
+  linkedin: teemutapanila
+  instagram: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
