@@ -1,0 +1,279 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Publishing WCF service that uses Blob Storage into Windows Azure Websites &#8211; Tapanila.net</title>
+<meta name="description" content="You can publish WCF Services into Windows Azure Websites.
+Also you can access all of the Azure resources from there too.
+You just need to add reference to Azure manually because by default the WCF application is not an Azure project.
+
+">
+<meta name="keywords" content="">
+
+  
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Publishing WCF service that uses Blob Storage into Windows Azure Websites">
+<meta name="twitter:description" content="You can publish WCF Services into Windows Azure Websites.
+Also you can access all of the Azure resources from there too.
+You just need to add reference to Azure manually because by default the WCF application is not an Azure project.
+
+">
+<meta name="twitter:site" content="@TapanilaT">
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://localhost:4000/images/default-thumb.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Publishing WCF service that uses Blob Storage into Windows Azure Websites">
+<meta property="og:description" content="You can publish WCF Services into Windows Azure Websites.
+Also you can access all of the Azure resources from there too.
+You just need to add reference to Azure manually because by default the WCF application is not an Azure project.
+
+">
+<meta property="og:url" content="http://localhost:4000/publishing-wcf-service-that-uses-blob-storage-into-windows-azure-websites/">
+<meta property="og:site_name" content="Tapanila.net">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/publishing-wcf-service-that-uses-blob-storage-into-windows-azure-websites/">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Tapanila.net Feed">
+<link rel="author" href="http://plus.google.com/+TeemuTapanila?rel=author">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+	<script src="http://localhost:4000/assets/js/vendor/html5shiv.min.js"></script>
+	<script src="http://localhost:4000/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://localhost:4000/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body class="post">
+
+<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+
+<div class="navigation-wrapper">
+	<div class="site-name">
+		<a href="http://localhost:4000">Tapanila.net</a>
+	</div><!-- /.site-name -->
+	<div class="top-navigation">
+		<nav role="navigation" id="site-nav" class="nav">
+		    <ul>
+		        
+					    
+					        
+					    
+					    <li><a href="http://localhost:4000/posts/" >Posts</a></li>
+					  
+		    </ul>
+		</nav>
+	</div><!-- /.top-navigation -->
+</div><!-- /.navigation-wrapper -->
+
+
+
+<div id="main" role="main">
+  <div class="article-author-side">
+    
+  
+
+
+
+	<img src="https://scontent-b.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/1173683_10151581249326034_13663214_n.jpg?oh=d8035f751cff6de36c7d369e4068667c&oe=54A3CDAC" class="bio-photo" alt="Teemu Tapanila bio photo"></a>
+
+<h3>Teemu Tapanila</h3>
+<p>Microsoft Azure MVP and Windows Phone developer</p>
+<a href="mailto:teemu@tapanila.net" class="author-social" target="_blank"><i class="fa fa-envelope-square"></i> Email</a>
+<a href="http://twitter.com/TapanilaT" class="author-social" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>
+<a href="http://facebook.com/Teemu.Tapanila" class="author-social" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a>
+<a href="http://plus.google.com/+TeemuTapanila" class="author-social" target="_blank"><i class="fa fa-google-plus-square"></i> Google+</a>
+<a href="http://linkedin.com/in/teemutapanila" class="author-social" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+
+
+<a href="http://github.com/Tapanila" class="author-social" target="_blank"><i class="fa fa-github"></i> Github</a>
+<a href="http://stackoverflow.com/users/http://stackoverflow.com/users/797074/teemu-tapanila" class="author-social" target="_blank"><i class="fa fa-stack-overflow"></i> Stackoverflow</a>
+
+
+
+
+
+  </div>
+  <article>
+    <div class="headline-wrap">
+      
+        <h1><a href="http://localhost:4000/publishing-wcf-service-that-uses-blob-storage-into-windows-azure-websites/" rel="bookmark" title="Publishing WCF service that uses Blob Storage into Windows Azure Websites">Publishing WCF service that uses Blob Storage into Windows Azure Websites</a></h1>
+      
+    </div><!--/ .headline-wrap -->
+    <div class="article-wrap">
+      <p>You can publish WCF Services into Windows Azure Websites.
+Also you can access all of the Azure resources from there too.
+You just need to add reference to Azure manually because by default the WCF application is not an Azure project.</p>
+
+<!--more-->
+<ol>
+	<li><a href="https://www.windowsazure.com/en-us/develop/net/">Download</a> and install Azure SDK</li>
+	<li>Login to <a href="https://manage.windowsazure.com">Azure Dashboard</a></li>
+	<li>Choose storage from left
+<a href="http://tapanila.azurewebsites.net/wp-content/uploads/2012/08/Storage.png"><img class="alignnone size-medium wp-image-196" title="Storage" src="http://res.cloudinary.com/tapanila-net/image/upload/h_300,w_190/v1388360783/Storage_fhlxrd.png" alt="" width="190" height="300" /></a></li>
+	<li> Click new from bottom left, choose Storage, Quick Create, type in your url and click Create Storage Account
+<a href="http://tapanila.azurewebsites.net/wp-content/uploads/2012/08/CreateNewStorage.png"><img class="alignnone size-medium wp-image-197" title="CreateNewStorage" src="http://res.cloudinary.com/tapanila-net/image/upload/h_164,w_300/v1388360782/CreateNewStorage_ofixqj.png" alt="" width="300" height="164" /></a></li>
+	<li>Open newly created Storage Account and choose Manage Keys from bottom
+<a href="http://tapanila.azurewebsites.net/wp-content/uploads/2012/08/ManageKeys.png"><img class="alignnone size-medium wp-image-199" title="ManageKeys" src="http://res.cloudinary.com/tapanila-net/image/upload/h_29,w_300/v1388360781/ManageKeys_jnxpin.png" alt="" width="300" height="29" /></a></li>
+	<li> Copy Primary Access Key and close window. We are going to use that key later
+<a href="http://tapanila.azurewebsites.net/wp-content/uploads/2012/08/PrimaryAcccessKey.png"><img class="alignnone size-medium wp-image-200" title="PrimaryAcccessKey" src="http://res.cloudinary.com/tapanila-net/image/upload/h_255,w_300/v1388360780/PrimaryAcccessKey_t3xcfk.png" alt="" width="300" height="255" /></a></li>
+	<li>Choose websites from left
+<a href="http://tapanila.net/wp-content/uploads/2012/07/AzureWebsites1.png"><img title="AzureWebsites" src="http://tapanila.net/wp-content/uploads/2012/07/AzureWebsites1.png" alt="" width="198" height="226" /></a></li>
+	<li>Click new from bottom left, choose Quick Create, type in your url and click Create Web Site
+<a href="http://tapanila.net/wp-content/uploads/2012/07/AzureWebsitesQuickCreate1.png"><img title="AzureWebsitesQuickCreate" src="http://tapanila.net/wp-content/uploads/2012/07/AzureWebsitesQuickCreate1-300x162.png" alt="" width="300" height="162" /></a></li>
+	<li>After that your website is up and running</li>
+	<li>Now open your website settings from Azure Dashboard by clicking the name of it
+<a href="http://tapanila.net/wp-content/uploads/2012/07/ChoosingWebsite.png"><img title="ChoosingWebsite" src="http://tapanila.net/wp-content/uploads/2012/07/ChoosingWebsite-300x10.png" alt="" width="300" height="10" /></a></li>
+	<li> You can use either TFS, Github, FTP or Visual Studio to deploy the website. I chose VS
+<a href="http://tapanila.net/wp-content/uploads/2012/07/DowndloadPublishProfile.png"><img title="DowndloadPublishProfile" src="http://tapanila.net/wp-content/uploads/2012/07/DowndloadPublishProfile-217x300.png" alt="" width="217" height="300" /></a></li>
+	<li> Now create your new WCF Application project on Visual Studio. Remember tho choose .NET Framework 4
+<a href="http://tapanila.azurewebsites.net/wp-content/uploads/2012/07/CreateNewWCFServiceProject1.png"><img class="alignnone size-medium wp-image-98" title="CreateNewWCFServiceProject" src="http://res.cloudinary.com/tapanila-net/image/upload/h_207,w_300/v1388360870/CreateNewWCFServiceProject1_ifqzip.png" alt="" width="300" height="207" /></a></li>
+	<li>Right click your project and choose add reference
+<a href="http://tapanila.azurewebsites.net/wp-content/uploads/2012/08/AddReference.png"><img class="alignnone size-medium wp-image-202" title="AddReference" src="http://res.cloudinary.com/tapanila-net/image/upload/h_300,w_169/v1388360716/AddReference_r1wvzq.png" alt="" width="169" height="300" /></a></li>
+	<li>Search for Azure and check Azure.StorageClient and click okay
+<a href="http://tapanila.azurewebsites.net/wp-content/uploads/2012/08/ManageReferencesAzureStorage.png"><img class="alignnone size-medium wp-image-203" title="ManageReferencesAzureStorage" src="http://res.cloudinary.com/tapanila-net/image/upload/h_225,w_300/v1388360715/ManageReferencesAzureStorage_eyysez.png" alt="" width="300" height="225" /></a></li>
+	<li>Edit IService1.cs</li>
+<p><script src="https://gist.github.com/3270985.js"> </script></p>
+        <li>Edit Service1.svc</li>
+<p><script src="https://gist.github.com/3271026.js"> </script></p>
+	<li>Right click your project and choose publish
+<a href="http://tapanila.net/wp-content/uploads/2012/07/PublishingWCFService.png"><img class="alignnone size-medium wp-image-99" title="PublishingWCFService" src="http://res.cloudinary.com/tapanila-net/image/upload/h_300,w_225/v1388360869/PublishingWCFService_tqlvsn.png" alt="" width="225" height="300" /></a></li>
+	<li> Choose import and then browse to the file you downloaded from Azure Dashboard
+<a href="http://tapanila.net/wp-content/uploads/2012/07/ImportPublishProfile.png"><img title="ImportPublishProfile" src="http://tapanila.net/wp-content/uploads/2012/07/ImportPublishProfile-300x233.png" alt="" width="300" height="233" /></a></li>
+	<li>Now just click publish
+<a href="http://tapanila.net/wp-content/uploads/2012/07/PublishWebApplication.png"><img title="PublishWebApplication" src="http://tapanila.net/wp-content/uploads/2012/07/PublishWebApplication-300x232.png" alt="" width="300" height="232" /></a></li>
+	<li>Enjoy of your new service
+<a href="http://tapanila.net/wp-content/uploads/2012/07/PublishedWCFService.png"><img title="PublishedWCFService" src="http://tapanila.net/wp-content/uploads/2012/07/PublishedWCFService-300x187.png" alt="" width="300" height="187" /></a></li>
+</ol>
+
+      <hr />
+      <footer role="contentinfo">
+        <div class="article-author-bottom">
+          
+  
+
+
+
+	<img src="https://scontent-b.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/1173683_10151581249326034_13663214_n.jpg?oh=d8035f751cff6de36c7d369e4068667c&oe=54A3CDAC" class="bio-photo" alt="Teemu Tapanila bio photo"></a>
+
+<h3>Teemu Tapanila</h3>
+<p>Microsoft Azure MVP and Windows Phone developer</p>
+<a href="mailto:teemu@tapanila.net" class="author-social" target="_blank"><i class="fa fa-envelope-square"></i> Email</a>
+<a href="http://twitter.com/TapanilaT" class="author-social" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>
+<a href="http://facebook.com/Teemu.Tapanila" class="author-social" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a>
+<a href="http://plus.google.com/+TeemuTapanila" class="author-social" target="_blank"><i class="fa fa-google-plus-square"></i> Google+</a>
+<a href="http://linkedin.com/in/teemutapanila" class="author-social" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+
+
+<a href="http://github.com/Tapanila" class="author-social" target="_blank"><i class="fa fa-github"></i> Github</a>
+<a href="http://stackoverflow.com/users/http://stackoverflow.com/users/797074/teemu-tapanila" class="author-social" target="_blank"><i class="fa fa-stack-overflow"></i> Stackoverflow</a>
+
+
+
+
+
+        </div>
+        <p class="byline"><strong>Publishing WCF service that uses Blob Storage into Windows Azure Websites</strong> was published on <time datetime="2012-08-06T10:00:00+02:00">August 06, 2012</time>.</p>
+      </footer>
+    </div><!-- /.article-wrap -->
+  
+    <section id="disqus_thread"></section><!-- /#disqus_thread -->
+  
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrap">
+  <div class="related-articles">
+  <h4>You might also enjoy <small class="pull-right">(<a href="http://localhost:4000/posts/">View all posts</a>)</small></h4>
+    <ul>
+    
+      <li><a href="http://localhost:4000/windows-phone-8-with-caliburn-micro-data-binding/" title="Windows Phone 8 with Caliburn Micro Data Binding">Windows Phone 8 with Caliburn Micro Data Binding</a></li>
+    
+      <li><a href="http://localhost:4000/windows-phone-8-with-caliburn-micro/" title="Windows Phone 8 with Caliburn Micro">Windows Phone 8 with Caliburn Micro</a></li>
+    
+      <li><a href="http://localhost:4000/facebook-single-sign-on-on-windows-phone-8-with-windows-azure-mobile-services/" title="Facebook Single sign-on on Windows Phone 8 with Windows Azure Mobile Services">Facebook Single sign-on on Windows Phone 8 with Windows Azure Mobile Services</a></li>
+    
+    </ul>
+    <hr />
+  </div><!-- /.related-articles -->
+  <footer>
+    
+
+<span>&copy; 2014 Teemu Tapanila. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/">Minimal Mistakes</a> theme.</span>
+
+  </footer>
+</div><!-- /.footer-wrap -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+
+
+  
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'tapanilanetblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+	        
+
+</body>
+</html>

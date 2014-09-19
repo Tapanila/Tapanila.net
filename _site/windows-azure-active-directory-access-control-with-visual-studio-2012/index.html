@@ -1,0 +1,288 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Windows Azure Active Directory Access Control with Visual Studio 2012 &#8211; Tapanila.net</title>
+<meta name="description" content="This guide shows you how to use Windows Azure Active Directory Access Control (also known as Access Control Service or ACS)
+
+">
+<meta name="keywords" content="">
+
+  
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Windows Azure Active Directory Access Control with Visual Studio 2012">
+<meta name="twitter:description" content="This guide shows you how to use Windows Azure Active Directory Access Control (also known as Access Control Service or ACS)
+
+">
+<meta name="twitter:site" content="@TapanilaT">
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://localhost:4000/images/default-thumb.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Windows Azure Active Directory Access Control with Visual Studio 2012">
+<meta property="og:description" content="This guide shows you how to use Windows Azure Active Directory Access Control (also known as Access Control Service or ACS)
+
+">
+<meta property="og:url" content="http://localhost:4000/windows-azure-active-directory-access-control-with-visual-studio-2012/">
+<meta property="og:site_name" content="Tapanila.net">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/windows-azure-active-directory-access-control-with-visual-studio-2012/">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Tapanila.net Feed">
+<link rel="author" href="http://plus.google.com/+TeemuTapanila?rel=author">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+	<script src="http://localhost:4000/assets/js/vendor/html5shiv.min.js"></script>
+	<script src="http://localhost:4000/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://localhost:4000/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body class="post">
+
+<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+
+<div class="navigation-wrapper">
+	<div class="site-name">
+		<a href="http://localhost:4000">Tapanila.net</a>
+	</div><!-- /.site-name -->
+	<div class="top-navigation">
+		<nav role="navigation" id="site-nav" class="nav">
+		    <ul>
+		        
+					    
+					        
+					    
+					    <li><a href="http://localhost:4000/posts/" >Posts</a></li>
+					  
+		    </ul>
+		</nav>
+	</div><!-- /.top-navigation -->
+</div><!-- /.navigation-wrapper -->
+
+
+
+<div id="main" role="main">
+  <div class="article-author-side">
+    
+  
+
+
+
+	<img src="https://scontent-b.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/1173683_10151581249326034_13663214_n.jpg?oh=d8035f751cff6de36c7d369e4068667c&oe=54A3CDAC" class="bio-photo" alt="Teemu Tapanila bio photo"></a>
+
+<h3>Teemu Tapanila</h3>
+<p>Microsoft Azure MVP and Windows Phone developer</p>
+<a href="mailto:teemu@tapanila.net" class="author-social" target="_blank"><i class="fa fa-envelope-square"></i> Email</a>
+<a href="http://twitter.com/TapanilaT" class="author-social" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>
+<a href="http://facebook.com/Teemu.Tapanila" class="author-social" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a>
+<a href="http://plus.google.com/+TeemuTapanila" class="author-social" target="_blank"><i class="fa fa-google-plus-square"></i> Google+</a>
+<a href="http://linkedin.com/in/teemutapanila" class="author-social" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+
+
+<a href="http://github.com/Tapanila" class="author-social" target="_blank"><i class="fa fa-github"></i> Github</a>
+<a href="http://stackoverflow.com/users/http://stackoverflow.com/users/797074/teemu-tapanila" class="author-social" target="_blank"><i class="fa fa-stack-overflow"></i> Stackoverflow</a>
+
+
+
+
+
+  </div>
+  <article>
+    <div class="headline-wrap">
+      
+        <h1><a href="http://localhost:4000/windows-azure-active-directory-access-control-with-visual-studio-2012/" rel="bookmark" title="Windows Azure Active Directory Access Control with Visual Studio 2012">Windows Azure Active Directory Access Control with Visual Studio 2012</a></h1>
+      
+    </div><!--/ .headline-wrap -->
+    <div class="article-wrap">
+      <p>This guide shows you how to use Windows Azure Active Directory Access Control (also known as Access Control Service or ACS)</p>
+
+<!--more-->
+
+<p>Requirements:</p>
+<ul>
+	<li>Visual Studio 2012</li>
+	<li><a href="http://visualstudiogallery.msdn.microsoft.com/e21bf653-dfe1-4d81-b3d3-795cb104066e">Identity and Access tool</a></li>
+	<li>An active <a title="Free Trial" href="http://www.windowsazure.com/en-us/pricing/free-trial/">Windows Azure account</a></li>
+</ul>
+<p>Lets start by configuring the Windows Azure part first.</p>
+<ol>
+	<li>Open <a href="https://manage.windowsazure.com">dashboard</a></li>
+	<li>Click Active Directory
+<a href="http://res.cloudinary.com/tapanila-net/image/upload/v1388360657/ActiveDirectory_bzidyg.png"><img class="alignnone size-full wp-image-1701" alt="ActiveDirectory" src="http://res.cloudinary.com/tapanila-net/image/upload/v1388360657/ActiveDirectory_bzidyg.png" width="181" height="553" /></a></li>
+	<li>Click New from left bottom and fill in the name and choose region
+<a href="http://res.cloudinary.com/tapanila-net/image/upload/v1388360655/CreateActiveDirectory_yuiuti.png"><img class="alignnone size-full wp-image-1711" alt="CreateActiveDirectory" src="http://res.cloudinary.com/tapanila-net/image/upload/v1388360655/CreateActiveDirectory_yuiuti.png" width="1140" height="490" /></a></li>
+	<li>Choose your subscription and click Manage from bottom<a href="http://res.cloudinary.com/tapanila-net/image/upload/v1388360654/ManageActiveDirectory2_vozld8.png"><img class="alignnone size-full wp-image-1741" alt="ManageActiveDirectory2" src="http://res.cloudinary.com/tapanila-net/image/upload/v1388360654/ManageActiveDirectory2_vozld8.png" width="903" height="113" /></a></li>
+	<li>Take up your Service Namespace. In my case "tapanilablog"
+<a href="http://res.cloudinary.com/tapanila-net/image/upload/v1388360651/AccessControlService1_yi9fyf.png"><img class="alignnone size-full wp-image-1761" alt="AccessControlService" src="http://res.cloudinary.com/tapanila-net/image/upload/v1388360651/AccessControlService1_yi9fyf.png" width="1042" height="590" /></a></li>
+	<li>Click Management Service from left and then ManagementClient
+<a href="http://res.cloudinary.com/tapanila-net/image/upload/v1388360650/AccessControlServiceManagementService_pinknc.png"><img class="alignnone size-full wp-image-1771" alt="AccessControlServiceManagementService" src="http://res.cloudinary.com/tapanila-net/image/upload/v1388360650/AccessControlServiceManagementService_pinknc.png" width="1024" height="495" /></a></li>
+	<li>Click Password
+<a href="http://res.cloudinary.com/tapanila-net/image/upload/v1388360649/AccessControlServiceManagementServicePassword_pgjkuq.png"><img class="alignnone size-full wp-image-1781" alt="AccessControlServiceManagementServicePassword" src="http://res.cloudinary.com/tapanila-net/image/upload/v1388360649/AccessControlServiceManagementServicePassword_pgjkuq.png" width="1025" height="511" /></a></li>
+	<li>Click Show Password and take up your Password there's needed later
+<a href="http://res.cloudinary.com/tapanila-net/image/upload/v1388360647/AccessControlServiceManagementServicePasswordButton_howzgq.png"><img class="alignnone size-full wp-image-1791" alt="AccessControlServiceManagementServicePasswordButton" src="http://res.cloudinary.com/tapanila-net/image/upload/v1388360647/AccessControlServiceManagementServicePasswordButton_howzgq.png" width="1032" height="601" /></a></li>
+	<li>Close your ACS management page and go back to dashboard</li>
+	<li>Click Web sites
+<a href="http://res.cloudinary.com/tapanila-net/image/upload/v1388360646/WebSites_to3wps.png"><img class="alignnone size-full wp-image-1801" alt="WebSites" src="http://res.cloudinary.com/tapanila-net/image/upload/v1388360646/WebSites_to3wps.png" width="188" height="471" /></a></li>
+	<li>Create new web site
+<a href="http://res.cloudinary.com/tapanila-net/image/upload/v1388360645/CreateWebSite_hgxysg.png"><img class="alignnone size-full wp-image-1811" alt="CreateWebSite" src="http://res.cloudinary.com/tapanila-net/image/upload/v1388360645/CreateWebSite_hgxysg.png" width="1145" height="485" /></a></li>
+	<li>Download the publish profile and take up the url
+<a href="http://res.cloudinary.com/tapanila-net/image/upload/v1388360644/WebSiteDetails_vgrdxn.png"><img class="alignnone size-full wp-image-1821" alt="WebSiteDetails" src="http://res.cloudinary.com/tapanila-net/image/upload/v1388360644/WebSiteDetails_vgrdxn.png" width="248" height="315" /></a></li>
+</ol>
+<p>Now the Visual studio part</p>
+<ol>
+	<li>Create new web project. Check that you are targeting .net 4.5
+<a href="http://res.cloudinary.com/tapanila-net/image/upload/v1388360643/CreatingEmptyWebProject_o9a7ky.png"><img class="alignnone size-full wp-image-1831" alt="CreatingEmptyWebProject" src="http://res.cloudinary.com/tapanila-net/image/upload/v1388360643/CreatingEmptyWebProject_o9a7ky.png" width="954" height="582" /></a></li>
+	<li>Right click your project and choose Identity and Access
+<a href="http://res.cloudinary.com/tapanila-net/image/upload/v1388360641/IdentityAndAccess_f5xudj.png"><img class="alignnone size-full wp-image-1841" alt="IdentityAndAccess" src="http://res.cloudinary.com/tapanila-net/image/upload/v1388360641/IdentityAndAccess_f5xudj.png" width="647" height="537" /></a></li>
+	<li>Select "Use the Windows Azure Access Control Service"
+<a href="http://res.cloudinary.com/tapanila-net/image/upload/v1388360623/IdentityAndAccessSettings_pufhes.png"><img class="alignnone size-full wp-image-1881" alt="IdentityAndAccessSettings" src="http://res.cloudinary.com/tapanila-net/image/upload/v1388360623/IdentityAndAccessSettings_pufhes.png" width="729" height="208" /></a></li>
+	<li>Click Change from below
+<a href="http://res.cloudinary.com/tapanila-net/image/upload/v1388360626/IdentityAndAccessChange_kffyqm.png"><img class="alignnone size-full wp-image-1851" alt="IdentityAndAccessChange" src="http://res.cloudinary.com/tapanila-net/image/upload/v1388360626/IdentityAndAccessChange_kffyqm.png" width="720" height="293" /></a></li>
+	<li>Enter your ACS namespace and management key that we got before
+<a href="http://res.cloudinary.com/tapanila-net/image/upload/v1388360625/IdentityAndAccessConfigure_igfoct.png"><img class="alignnone size-full wp-image-1861" alt="IdentityAndAccessConfigure" src="http://res.cloudinary.com/tapanila-net/image/upload/v1388360625/IdentityAndAccessConfigure_igfoct.png" width="481" height="317" /></a></li>
+	<li>Choose which providers you want to use with your application and Enter your realms and click okay
+<a href="http://res.cloudinary.com/tapanila-net/image/upload/v1388360624/IdentityAndAccessProvideAndRealms_xdbxzn.png"><img class="alignnone size-full wp-image-1871" alt="IdentityAndAccessProvideAndRealms" src="http://res.cloudinary.com/tapanila-net/image/upload/v1388360624/IdentityAndAccessProvideAndRealms_xdbxzn.png" width="732" height="363" /></a></li>
+	<li>Right click project and click Publish
+<a href="http://res.cloudinary.com/tapanila-net/image/upload/v1388360621/PublishingProject_shn3aa.png"><img class="alignnone size-full wp-image-1901" alt="PublishingProject" src="http://res.cloudinary.com/tapanila-net/image/upload/v1388360621/PublishingProject_shn3aa.png" width="657" height="400" /></a></li>
+	<li>Import your publishing profile
+<a href="http://res.cloudinary.com/tapanila-net/image/upload/v1388360622/PublishingImport_fzwzmb.png"><img class="alignnone size-full wp-image-1891" alt="PublishingImport" src="http://res.cloudinary.com/tapanila-net/image/upload/v1388360622/PublishingImport_fzwzmb.png" width="584" height="296" /></a></li>
+	<li>Click Publish
+<a href="http://res.cloudinary.com/tapanila-net/image/upload/v1388360620/PublishPublish_lsnbxq.png"><img class="alignnone size-full wp-image-1911" alt="PublishPublish" src="http://res.cloudinary.com/tapanila-net/image/upload/v1388360620/PublishPublish_lsnbxq.png" width="683" height="501" /></a></li>
+	<li>Now it should open your website and automatically redirect you into Live login because that's the only method. After your login is completed it will show you "Server Error in '/' Application. Because we used empty project</li>
+</ol>
+
+<p>Update 29.7.2013:
+If you have Runtime/Server issues when you have deployed this to Azure follow this <a href="http://denepalmer.azurewebsites.net/index.php/how-to-fix-runtimeserver-error-redirect-issues-when-adding-azure-acs-authentication-to-an-asp-net-project/">guide</a>.</p>
+
+      <hr />
+      <footer role="contentinfo">
+        <div class="article-author-bottom">
+          
+  
+
+
+
+	<img src="https://scontent-b.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/1173683_10151581249326034_13663214_n.jpg?oh=d8035f751cff6de36c7d369e4068667c&oe=54A3CDAC" class="bio-photo" alt="Teemu Tapanila bio photo"></a>
+
+<h3>Teemu Tapanila</h3>
+<p>Microsoft Azure MVP and Windows Phone developer</p>
+<a href="mailto:teemu@tapanila.net" class="author-social" target="_blank"><i class="fa fa-envelope-square"></i> Email</a>
+<a href="http://twitter.com/TapanilaT" class="author-social" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>
+<a href="http://facebook.com/Teemu.Tapanila" class="author-social" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a>
+<a href="http://plus.google.com/+TeemuTapanila" class="author-social" target="_blank"><i class="fa fa-google-plus-square"></i> Google+</a>
+<a href="http://linkedin.com/in/teemutapanila" class="author-social" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+
+
+<a href="http://github.com/Tapanila" class="author-social" target="_blank"><i class="fa fa-github"></i> Github</a>
+<a href="http://stackoverflow.com/users/http://stackoverflow.com/users/797074/teemu-tapanila" class="author-social" target="_blank"><i class="fa fa-stack-overflow"></i> Stackoverflow</a>
+
+
+
+
+
+        </div>
+        <p class="byline"><strong>Windows Azure Active Directory Access Control with Visual Studio 2012</strong> was published on <time datetime="2013-01-30T13:47:00+01:00">January 30, 2013</time>.</p>
+      </footer>
+    </div><!-- /.article-wrap -->
+  
+    <section id="disqus_thread"></section><!-- /#disqus_thread -->
+  
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrap">
+  <div class="related-articles">
+  <h4>You might also enjoy <small class="pull-right">(<a href="http://localhost:4000/posts/">View all posts</a>)</small></h4>
+    <ul>
+    
+      <li><a href="http://localhost:4000/windows-phone-8-with-caliburn-micro-data-binding/" title="Windows Phone 8 with Caliburn Micro Data Binding">Windows Phone 8 with Caliburn Micro Data Binding</a></li>
+    
+      <li><a href="http://localhost:4000/windows-phone-8-with-caliburn-micro/" title="Windows Phone 8 with Caliburn Micro">Windows Phone 8 with Caliburn Micro</a></li>
+    
+      <li><a href="http://localhost:4000/facebook-single-sign-on-on-windows-phone-8-with-windows-azure-mobile-services/" title="Facebook Single sign-on on Windows Phone 8 with Windows Azure Mobile Services">Facebook Single sign-on on Windows Phone 8 with Windows Azure Mobile Services</a></li>
+    
+    </ul>
+    <hr />
+  </div><!-- /.related-articles -->
+  <footer>
+    
+
+<span>&copy; 2014 Teemu Tapanila. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/">Minimal Mistakes</a> theme.</span>
+
+  </footer>
+</div><!-- /.footer-wrap -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+
+
+  
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'tapanilanetblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+	        
+
+</body>
+</html>
