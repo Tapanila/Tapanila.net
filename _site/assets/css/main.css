@@ -3132,3 +3132,7 @@ img.mfp-img {
 .gist-file {
   border-bottom: 0px;
 }
+
+ul, ol {
+  -webkit-padding-start: 0px;
+}
