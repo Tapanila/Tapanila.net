@@ -3121,7 +3121,6 @@ img.mfp-img {
 .gist code {
   font: 100%/1.5 sans-serif !important;
   white-space: pre !important;
-  line-height: 100% !important;
 }
 
 .gist-meta {
@@ -3133,6 +3132,18 @@ img.mfp-img {
   border-bottom: 0px;
 }
 
+.gist .line-data {
+  line-height: 16px !important;
+}
+
+.gist .line-numbers {
+  display: none;
+}
+
+.lines {
+  margin-bottom: 0px !important;
+}
+
 ul, ol {
-  -webkit-padding-start: 0px;
+  -webkit-padding-start: 20px;
 }

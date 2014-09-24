@@ -2,10 +2,19 @@
 .gist code {
     font: 100%/1.5 sans-serif !important;
     white-space: pre !important;
-	line-height: 100% !important;
 }
 .gist-meta {display:none;}
 .gist
 .gist-file {
-	border-bottom: 0px
+	border-bottom: 0px;
+}
+.gist .line-data {
+	line-height: 16px !important;
+}
+.gist .line-numbers {
+	display: none;
+}
+
+.lines {
+	margin-bottom: 0px !important;
 }
