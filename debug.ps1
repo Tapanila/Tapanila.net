@@ -1,0 +1,1 @@
+jekyll server -w --config _config_debug.yml
