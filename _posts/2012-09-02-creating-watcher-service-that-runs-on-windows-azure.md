@@ -13,10 +13,10 @@ This post is about combining the stuff that I have recently wrote about and crea
 
 This post contains a lot of code if you want more easier to follow blog posts just look those 3 from above. Everything that is done here is basically combing all 3 of those and then building a real service using them. The solution is WCF application for .net 4.0 and then published into Azure Websites.
 Create a new WCF application (.net 4.0)
-<a href="https://res\.cloudinary\.com/tapanila-net/image/upload/v1388360870/CreateNewWCFServiceProject1_ifqzip.png"><img class="alignnone size-full wp-image-98" title="CreateNewWCFServiceProject" src="https://res\.cloudinary\.com/tapanila-net/image/upload/v1388360870/CreateNewWCFServiceProject1_ifqzip.png" alt="" width="951" height="658" /></a>
+<a href="https://res.cloudinary.com/tapanila-net/image/upload/v1388360870/CreateNewWCFServiceProject1_ifqzip.png"><img class="alignnone size-full wp-image-98" title="CreateNewWCFServiceProject" src="https://res.cloudinary.com/tapanila-net/image/upload/v1388360870/CreateNewWCFServiceProject1_ifqzip.png" alt="" width="951" height="658" /></a>
 
 Open NuGet Package manager
-<a href="https://res\.cloudinary\.com/tapanila-net/image/upload/v1388360855/OpenNuGet_xomu4s.png"><img class="alignnone size-full wp-image-146" title="OpenNuGet" src="https://res\.cloudinary\.com/tapanila-net/image/upload/v1388360855/OpenNuGet_xomu4s.png" alt="" width="345" height="193" /></a>
+<a href="https://res.cloudinary.com/tapanila-net/image/upload/v1388360855/OpenNuGet_xomu4s.png"><img class="alignnone size-full wp-image-146" title="OpenNuGet" src="https://res.cloudinary.com/tapanila-net/image/upload/v1388360855/OpenNuGet_xomu4s.png" alt="" width="345" height="193" /></a>
 
 Add references to these libraries: SendGrid and Windows Azure Storage.
 Here's the code for Service1.scv.cs

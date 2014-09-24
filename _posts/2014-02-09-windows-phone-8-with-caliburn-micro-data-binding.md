@@ -19,6 +19,6 @@ Lets get started
 	<li>Edit MainPageViewModel.cs
 {% gist 8890763 %}</li>
 	<li>Launch emulator and enjoy!
-<img class="alignnone wp-image-6091" alt="" src="https://res\.cloudinary\.com/tapanila-net/image/upload/c_scale,q_100,w_610/v1391895909/Windows_Phone_Emulator_nv1c81.png" width="610" height="1066" /></li>
+<img class="alignnone wp-image-6091" alt="" src="https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_610/v1391895909/Windows_Phone_Emulator_nv1c81.png" width="610" height="1066" /></li>
 </ol>
 If you have anything to ask about data binding just leave a comment.
