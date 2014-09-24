@@ -2,13 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Tapanila.net</title>
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="http://tapanila.net/feed.xml" />
-<link rel="alternate" type="text/html" href="http://tapanila.net" />
-<updated>2014-09-23T15:08:18+02:00</updated>
-<id>http://tapanila.net/</id>
+<link rel="self" type="application/atom+xml" href="https://tapanila.net/feed.xml" />
+<link rel="alternate" type="text/html" href="https://tapanila.net" />
+<updated>2014-09-24T10:28:02+02:00</updated>
+<id>https://tapanila.net/</id>
 <author>
   <name>Teemu Tapanila</name>
-  <uri>http://tapanila.net/</uri>
+  <uri>https://tapanila.net/</uri>
   <email>teemu@tapanila.net</email>
 </author>
 
@@ -17,13 +17,13 @@
 
 <entry>
   <title type="html"><![CDATA[Windows Phone 8 with Caliburn Micro Data Binding]]></title>
-  <link rel="alternate" type="text/html" href="http://tapanila.net/windows-phone-8-with-caliburn-micro-data-binding/" />
-  <id>http://tapanila.net/windows-phone-8-with-caliburn-micro-data-binding</id>
+  <link rel="alternate" type="text/html" href="https://tapanila.net/windows-phone-8-with-caliburn-micro-data-binding/" />
+  <id>https://tapanila.net/windows-phone-8-with-caliburn-micro-data-binding</id>
   <published>2014-02-09T00:53:00+01:00</published>
   <updated>2014-02-09T00:53:00+01:00</updated>
   <author>
     <name></name>
-    <uri>http://tapanila.net</uri>
+    <uri>https://tapanila.net</uri>
     
   </author>
   <content type="html">&lt;p&gt;Most powerful feature of Caliburn Micro is Data Binding. It connects your data logic and view together. It also make sure that whenever value is changed on logic side that change is reflected into view.&lt;/p&gt;
@@ -43,7 +43,7 @@
 &lt;/ol&gt;
 &lt;p&gt;If you have anything to ask about data binding just leave a comment.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://tapanila.net/windows-phone-8-with-caliburn-micro-data-binding/&quot;&gt;Windows Phone 8 with Caliburn Micro Data Binding&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on February 09, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;https://tapanila.net/windows-phone-8-with-caliburn-micro-data-binding/&quot;&gt;Windows Phone 8 with Caliburn Micro Data Binding&lt;/a&gt; was originally published by  at &lt;a href=&quot;https://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on February 09, 2014.&lt;/p&gt;</content>
 </entry>
 
 
@@ -51,13 +51,13 @@
 
 <entry>
   <title type="html"><![CDATA[Windows Phone 8 with Caliburn Micro]]></title>
-  <link rel="alternate" type="text/html" href="http://tapanila.net/windows-phone-8-with-caliburn-micro/" />
-  <id>http://tapanila.net/windows-phone-8-with-caliburn-micro</id>
+  <link rel="alternate" type="text/html" href="https://tapanila.net/windows-phone-8-with-caliburn-micro/" />
+  <id>https://tapanila.net/windows-phone-8-with-caliburn-micro</id>
   <published>2014-02-02T22:54:00+01:00</published>
   <updated>2014-02-02T22:54:00+01:00</updated>
   <author>
     <name>Teemu Tapanila</name>
-    <uri>http://tapanila.net</uri>
+    <uri>https://tapanila.net</uri>
     <email>teemu@tapanila.net</email>
   </author>
   <content type="html">&lt;p&gt;I love Model View ViewModel (MVVM) pattern when doing Windows Phone or Windows 8 development. It allows nice separation of UI and code which gives your project very good structure. There’s basically two common MVVM toolkits out which are &lt;a href=&quot;http://mvvmlight.codeplex.com/&quot;&gt;MVVM Light&lt;/a&gt; and &lt;a href=&quot;https://caliburnmicro.codeplex.com/&quot;&gt;Caliburn Micro&lt;/a&gt;.&lt;/p&gt;
@@ -91,7 +91,7 @@
 &lt;p&gt;If you have any questions regarding how to use Caliburn Micro with Windows Phone 8 or Windows 8 please do so on comments.
 Whole solution can be found &lt;a href=&quot;https://github.com/tapanila/TT-WP8-Caliburn-1&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://tapanila.net/windows-phone-8-with-caliburn-micro/&quot;&gt;Windows Phone 8 with Caliburn Micro&lt;/a&gt; was originally published by Teemu Tapanila at &lt;a href=&quot;http://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on February 02, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;https://tapanila.net/windows-phone-8-with-caliburn-micro/&quot;&gt;Windows Phone 8 with Caliburn Micro&lt;/a&gt; was originally published by Teemu Tapanila at &lt;a href=&quot;https://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on February 02, 2014.&lt;/p&gt;</content>
 </entry>
 
 
@@ -99,13 +99,13 @@ Whole solution can be found &lt;a href=&quot;https://github.com/tapanila/TT-WP8-
 
 <entry>
   <title type="html"><![CDATA[Facebook Single sign-on on Windows Phone 8 with Windows Azure Mobile Services]]></title>
-  <link rel="alternate" type="text/html" href="http://tapanila.net/facebook-single-sign-on-on-windows-phone-8-with-windows-azure-mobile-services/" />
-  <id>http://tapanila.net/facebook-single-sign-on-on-windows-phone-8-with-windows-azure-mobile-services</id>
+  <link rel="alternate" type="text/html" href="https://tapanila.net/facebook-single-sign-on-on-windows-phone-8-with-windows-azure-mobile-services/" />
+  <id>https://tapanila.net/facebook-single-sign-on-on-windows-phone-8-with-windows-azure-mobile-services</id>
   <published>2014-01-26T19:54:00+01:00</published>
   <updated>2014-01-26T19:54:00+01:00</updated>
   <author>
     <name></name>
-    <uri>http://tapanila.net</uri>
+    <uri>https://tapanila.net</uri>
     
   </author>
   <content type="html">&lt;p&gt;Using Facebook single sign-on on Windows Phone 8 applications allows user very easy way to register/login to your application without filling forms. But it still requires user to enter Facebook login credentials to your application or Facebook web form. To avoid this you can use Facebook SSO (Single Sign On) which basically means that when you want to do authentication against Facebook on your application. You just redirect user to Facebook Windows Phone application where user can simply accept your application and whole authorization is done.&lt;/p&gt;
@@ -141,7 +141,7 @@ Whole solution can be found &lt;a href=&quot;https://github.com/tapanila/TT-WP8-
 
 &lt;p&gt; &lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://tapanila.net/facebook-single-sign-on-on-windows-phone-8-with-windows-azure-mobile-services/&quot;&gt;Facebook Single sign-on on Windows Phone 8 with Windows Azure Mobile Services&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on January 26, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;https://tapanila.net/facebook-single-sign-on-on-windows-phone-8-with-windows-azure-mobile-services/&quot;&gt;Facebook Single sign-on on Windows Phone 8 with Windows Azure Mobile Services&lt;/a&gt; was originally published by  at &lt;a href=&quot;https://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on January 26, 2014.&lt;/p&gt;</content>
 </entry>
 
 
@@ -149,13 +149,13 @@ Whole solution can be found &lt;a href=&quot;https://github.com/tapanila/TT-WP8-
 
 <entry>
   <title type="html"><![CDATA[Services that I use on Tapanila.net]]></title>
-  <link rel="alternate" type="text/html" href="http://tapanila.net/services-that-i-use-on-tapanila-net/" />
-  <id>http://tapanila.net/services-that-i-use-on-tapanila-net</id>
+  <link rel="alternate" type="text/html" href="https://tapanila.net/services-that-i-use-on-tapanila-net/" />
+  <id>https://tapanila.net/services-that-i-use-on-tapanila-net</id>
   <published>2014-01-18T19:42:00+01:00</published>
   <updated>2014-01-18T19:42:00+01:00</updated>
   <author>
     <name></name>
-    <uri>http://tapanila.net</uri>
+    <uri>https://tapanila.net</uri>
     
   </author>
   <content type="html">&lt;p&gt;I’m running Tapanila.net on Windows Azure Websites and using Wordpress. The biggest reason why I chose Wordpress and why I’m still using it is the amount of themes, plugins and services available for it. I use a lot of different services on my blog and here’s a list of them:&lt;/p&gt;
@@ -170,7 +170,7 @@ Whole solution can be found &lt;a href=&quot;https://github.com/tapanila/TT-WP8-
 &lt;/ul&gt;
 &lt;p&gt;If you have any questions regarding any of the services that I use or why did I choose these just ask on comments.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://tapanila.net/services-that-i-use-on-tapanila-net/&quot;&gt;Services that I use on Tapanila.net&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on January 18, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;https://tapanila.net/services-that-i-use-on-tapanila-net/&quot;&gt;Services that I use on Tapanila.net&lt;/a&gt; was originally published by  at &lt;a href=&quot;https://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on January 18, 2014.&lt;/p&gt;</content>
 </entry>
 
 
@@ -178,13 +178,13 @@ Whole solution can be found &lt;a href=&quot;https://github.com/tapanila/TT-WP8-
 
 <entry>
   <title type="html"><![CDATA[Windows Azure Mobile Services at CloudBrew]]></title>
-  <link rel="alternate" type="text/html" href="http://tapanila.net/windows-azure-mobile-services-at-cloudbrew/" />
-  <id>http://tapanila.net/windows-azure-mobile-services-at-cloudbrew</id>
+  <link rel="alternate" type="text/html" href="https://tapanila.net/windows-azure-mobile-services-at-cloudbrew/" />
+  <id>https://tapanila.net/windows-azure-mobile-services-at-cloudbrew</id>
   <published>2014-01-12T18:30:00+01:00</published>
   <updated>2014-01-12T18:30:00+01:00</updated>
   <author>
     <name></name>
-    <uri>http://tapanila.net</uri>
+    <uri>https://tapanila.net</uri>
     
   </author>
   <content type="html">&lt;p&gt;During december 2013 I was talking about Windows Azure Mobile Service at &lt;a href=&quot;http://cloudbrew.be&quot;&gt;CloudBrew&lt;/a&gt;.
@@ -192,7 +192,7 @@ Whole solution can be found &lt;a href=&quot;https://github.com/tapanila/TT-WP8-
 
 &lt;p&gt;Any questions or comments?&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://tapanila.net/windows-azure-mobile-services-at-cloudbrew/&quot;&gt;Windows Azure Mobile Services at CloudBrew&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on January 12, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;https://tapanila.net/windows-azure-mobile-services-at-cloudbrew/&quot;&gt;Windows Azure Mobile Services at CloudBrew&lt;/a&gt; was originally published by  at &lt;a href=&quot;https://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on January 12, 2014.&lt;/p&gt;</content>
 </entry>
 
 
@@ -200,13 +200,13 @@ Whole solution can be found &lt;a href=&quot;https://github.com/tapanila/TT-WP8-
 
 <entry>
   <title type="html"><![CDATA[Windows Azure Storage SDK now supports Windows Phone 8]]></title>
-  <link rel="alternate" type="text/html" href="http://tapanila.net/windows-azure-storage-sdk-now-supports-windows-phone-8/" />
-  <id>http://tapanila.net/windows-azure-storage-sdk-now-supports-windows-phone-8</id>
+  <link rel="alternate" type="text/html" href="https://tapanila.net/windows-azure-storage-sdk-now-supports-windows-phone-8/" />
+  <id>https://tapanila.net/windows-azure-storage-sdk-now-supports-windows-phone-8</id>
   <published>2013-09-14T01:42:00+02:00</published>
   <updated>2013-09-14T01:42:00+02:00</updated>
   <author>
     <name></name>
-    <uri>http://tapanila.net</uri>
+    <uri>https://tapanila.net</uri>
     
   </author>
   <content type="html">&lt;p&gt;Windows Azure Storage team has released preview version of the SDK which supports Windows Phone 8&lt;/p&gt;
@@ -228,7 +228,7 @@ Whole solution can be found &lt;a href=&quot;https://github.com/tapanila/TT-WP8-
 &lt;/ul&gt;
 &lt;p&gt;Found this useful or want more complex example?&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://tapanila.net/windows-azure-storage-sdk-now-supports-windows-phone-8/&quot;&gt;Windows Azure Storage SDK now supports Windows Phone 8&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on September 14, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;https://tapanila.net/windows-azure-storage-sdk-now-supports-windows-phone-8/&quot;&gt;Windows Azure Storage SDK now supports Windows Phone 8&lt;/a&gt; was originally published by  at &lt;a href=&quot;https://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on September 14, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -236,13 +236,13 @@ Whole solution can be found &lt;a href=&quot;https://github.com/tapanila/TT-WP8-
 
 <entry>
   <title type="html"><![CDATA[Windows Azure Mobile Services Custom API for existing SQL Database]]></title>
-  <link rel="alternate" type="text/html" href="http://tapanila.net/windows-azure-mobile-services-custom-api-for-existing-sql-database/" />
-  <id>http://tapanila.net/windows-azure-mobile-services-custom-api-for-existing-sql-database</id>
+  <link rel="alternate" type="text/html" href="https://tapanila.net/windows-azure-mobile-services-custom-api-for-existing-sql-database/" />
+  <id>https://tapanila.net/windows-azure-mobile-services-custom-api-for-existing-sql-database</id>
   <published>2013-06-24T18:00:00+02:00</published>
   <updated>2013-06-24T18:00:00+02:00</updated>
   <author>
     <name></name>
-    <uri>http://tapanila.net</uri>
+    <uri>https://tapanila.net</uri>
     
   </author>
   <content type="html">&lt;p&gt;Sometimes you have existing SQL database where you would like to expose some custom queries results
@@ -268,7 +268,7 @@ Whole solution can be found &lt;a href=&quot;https://github.com/tapanila/TT-WP8-
 
 &lt;p&gt;P.S. Note that if you get error that looks like this on windows azure mobile services log. Error occurred executing query: Error: [Microsoft][SQL Server Native Client 10.0][SQL Server]The SELECT permission was denied on the object ‘Orders’, database ‘TapanilaDemo’, schema ‘dbo’. It means that you need to grant the Windows Azure Mobile Services read rights to the schema.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://tapanila.net/windows-azure-mobile-services-custom-api-for-existing-sql-database/&quot;&gt;Windows Azure Mobile Services Custom API for existing SQL Database&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on June 24, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;https://tapanila.net/windows-azure-mobile-services-custom-api-for-existing-sql-database/&quot;&gt;Windows Azure Mobile Services Custom API for existing SQL Database&lt;/a&gt; was originally published by  at &lt;a href=&quot;https://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on June 24, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -276,13 +276,13 @@ Whole solution can be found &lt;a href=&quot;https://github.com/tapanila/TT-WP8-
 
 <entry>
   <title type="html"><![CDATA[Twitter reader for Logitech G15 keyboard]]></title>
-  <link rel="alternate" type="text/html" href="http://tapanila.net/twitter-reader-for-logitech-g15-keyboard/" />
-  <id>http://tapanila.net/twitter-reader-for-logitech-g15-keyboard</id>
+  <link rel="alternate" type="text/html" href="https://tapanila.net/twitter-reader-for-logitech-g15-keyboard/" />
+  <id>https://tapanila.net/twitter-reader-for-logitech-g15-keyboard</id>
   <published>2013-06-21T19:16:00+02:00</published>
   <updated>2013-06-21T19:16:00+02:00</updated>
   <author>
     <name></name>
-    <uri>http://tapanila.net</uri>
+    <uri>https://tapanila.net</uri>
     
   </author>
   <content type="html">&lt;p&gt;I created Twitter reader for Logitech G15 Keyboard.
@@ -299,7 +299,7 @@ Whole solution can be found &lt;a href=&quot;https://github.com/tapanila/TT-WP8-
 &lt;script type=&quot;text/javascript&quot; src=&quot;https://gist.github.com/tapanila/5832223.js&quot;&gt;&lt;/script&gt;Client:&lt;script type=&quot;text/javascript&quot; src=&quot;https://gist.github.com/tapanila/5832279.js&quot;&gt;&lt;/script&gt;
 &lt;a href=&quot;http://www.tapanila.net/wp-content/uploads/2013/06/G15-Twitter-Reader.rar&quot;&gt;Whole solution&lt;/a&gt;&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://tapanila.net/twitter-reader-for-logitech-g15-keyboard/&quot;&gt;Twitter reader for Logitech G15 keyboard&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on June 21, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;https://tapanila.net/twitter-reader-for-logitech-g15-keyboard/&quot;&gt;Twitter reader for Logitech G15 keyboard&lt;/a&gt; was originally published by  at &lt;a href=&quot;https://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on June 21, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -307,13 +307,13 @@ Whole solution can be found &lt;a href=&quot;https://github.com/tapanila/TT-WP8-
 
 <entry>
   <title type="html"><![CDATA[Creating Twitter reader using Windows Azure Mobile Services]]></title>
-  <link rel="alternate" type="text/html" href="http://tapanila.net/creating-twitter-reader-using-windows-azure-mobile-services/" />
-  <id>http://tapanila.net/creating-twitter-reader-using-windows-azure-mobile-services</id>
+  <link rel="alternate" type="text/html" href="https://tapanila.net/creating-twitter-reader-using-windows-azure-mobile-services/" />
+  <id>https://tapanila.net/creating-twitter-reader-using-windows-azure-mobile-services</id>
   <published>2013-06-15T20:57:00+02:00</published>
   <updated>2013-06-15T20:57:00+02:00</updated>
   <author>
     <name></name>
-    <uri>http://tapanila.net</uri>
+    <uri>https://tapanila.net</uri>
     
   </author>
   <content type="html">&lt;p&gt;You can now easily create twitter reader using Windows Azure Mobile Services features custom API, Git support and NPM (Node Package Manager) support
@@ -360,7 +360,7 @@ Whole solution can be found &lt;a href=&quot;https://github.com/tapanila/TT-WP8-
 &lt;/ol&gt;
 &lt;p&gt;P.S. Whole solution can be found &lt;a href=&quot;http://www.tapanila.net/wp-content/uploads/2013/08/tapanilatwitter.rar&quot;&gt;Here&lt;/a&gt;&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://tapanila.net/creating-twitter-reader-using-windows-azure-mobile-services/&quot;&gt;Creating Twitter reader using Windows Azure Mobile Services&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on June 15, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;https://tapanila.net/creating-twitter-reader-using-windows-azure-mobile-services/&quot;&gt;Creating Twitter reader using Windows Azure Mobile Services&lt;/a&gt; was originally published by  at &lt;a href=&quot;https://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on June 15, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -368,13 +368,13 @@ Whole solution can be found &lt;a href=&quot;https://github.com/tapanila/TT-WP8-
 
 <entry>
   <title type="html"><![CDATA[MVC 4 Scoped OAuth client for Facebook]]></title>
-  <link rel="alternate" type="text/html" href="http://tapanila.net/mvc-4-scoped-oauth-client-for-facebook/" />
-  <id>http://tapanila.net/mvc-4-scoped-oauth-client-for-facebook</id>
+  <link rel="alternate" type="text/html" href="https://tapanila.net/mvc-4-scoped-oauth-client-for-facebook/" />
+  <id>https://tapanila.net/mvc-4-scoped-oauth-client-for-facebook</id>
   <published>2013-06-02T15:58:00+02:00</published>
   <updated>2013-06-02T15:58:00+02:00</updated>
   <author>
     <name></name>
-    <uri>http://tapanila.net</uri>
+    <uri>https://tapanila.net</uri>
     
   </author>
   <content type="html">&lt;p&gt;Sometimes you might need special permissions right from start on your web application. Default MVC 4 OAuth clients only ask basic permissions and you can’t change that behavior unless you create your own OAuth client. I did that for Facebook and later on will continue with other providers when needed&lt;/p&gt;
@@ -400,7 +400,7 @@ OAuthWebSecurity.RegisterClient(new FacebookScopedClient(&quot;API-key&quot;, &q
 	&lt;li&gt;Done&lt;/li&gt;
 &lt;/ol&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://tapanila.net/mvc-4-scoped-oauth-client-for-facebook/&quot;&gt;MVC 4 Scoped OAuth client for Facebook&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on June 02, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;https://tapanila.net/mvc-4-scoped-oauth-client-for-facebook/&quot;&gt;MVC 4 Scoped OAuth client for Facebook&lt;/a&gt; was originally published by  at &lt;a href=&quot;https://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on June 02, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -408,13 +408,13 @@ OAuthWebSecurity.RegisterClient(new FacebookScopedClient(&quot;API-key&quot;, &q
 
 <entry>
   <title type="html"><![CDATA[I just became Nokia Developer Champion]]></title>
-  <link rel="alternate" type="text/html" href="http://tapanila.net/i-just-became-nokia-developer-champion/" />
-  <id>http://tapanila.net/i-just-became-nokia-developer-champion</id>
+  <link rel="alternate" type="text/html" href="https://tapanila.net/i-just-became-nokia-developer-champion/" />
+  <id>https://tapanila.net/i-just-became-nokia-developer-champion</id>
   <published>2013-05-14T08:19:00+02:00</published>
   <updated>2013-05-14T08:19:00+02:00</updated>
   <author>
     <name></name>
-    <uri>http://tapanila.net</uri>
+    <uri>https://tapanila.net</uri>
     
   </author>
   <content type="html">&lt;p&gt;I have been chosen as &lt;a href=&quot;https://www.developer.nokia.com/Community/Champions/&quot;&gt;Nokia Developer Champion&lt;/a&gt;!&lt;/p&gt;
@@ -423,7 +423,7 @@ OAuthWebSecurity.RegisterClient(new FacebookScopedClient(&quot;API-key&quot;, &q
 
 &lt;p&gt;You can read more about what the program is about from &lt;a href=&quot;https://www.developer.nokia.com/Community/Champions/&quot;&gt;Nokia Developer Page&lt;/a&gt; and &lt;a href=&quot;https://www.developer.nokia.com/Profile/?u=Tapanila&quot;&gt;link to my profile&lt;/a&gt;.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://tapanila.net/i-just-became-nokia-developer-champion/&quot;&gt;I just became Nokia Developer Champion&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on May 14, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;https://tapanila.net/i-just-became-nokia-developer-champion/&quot;&gt;I just became Nokia Developer Champion&lt;/a&gt; was originally published by  at &lt;a href=&quot;https://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on May 14, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -431,13 +431,13 @@ OAuthWebSecurity.RegisterClient(new FacebookScopedClient(&quot;API-key&quot;, &q
 
 <entry>
   <title type="html"><![CDATA[Github micro free for students]]></title>
-  <link rel="alternate" type="text/html" href="http://tapanila.net/github-micro-free-for-students/" />
-  <id>http://tapanila.net/github-micro-free-for-students</id>
+  <link rel="alternate" type="text/html" href="https://tapanila.net/github-micro-free-for-students/" />
+  <id>https://tapanila.net/github-micro-free-for-students</id>
   <published>2013-04-25T13:03:00+02:00</published>
   <updated>2013-04-25T13:03:00+02:00</updated>
   <author>
     <name></name>
-    <uri>http://tapanila.net</uri>
+    <uri>https://tapanila.net</uri>
     
   </author>
   <content type="html">&lt;p&gt;Ever wanted to use private repository for GitHub? If you are a student you can get it for free at &lt;a href=&quot;https://github.com/edu&quot;&gt;https://github.com/edu
@@ -452,7 +452,7 @@ After you have entered to the website you only need fill in quick form and then 
 &lt;/ul&gt;
 &lt;p&gt;Also to speed up the process it’s recommended that you add your school official email to your github account and verify it.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://tapanila.net/github-micro-free-for-students/&quot;&gt;Github micro free for students&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on April 25, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;https://tapanila.net/github-micro-free-for-students/&quot;&gt;Github micro free for students&lt;/a&gt; was originally published by  at &lt;a href=&quot;https://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on April 25, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -460,13 +460,13 @@ After you have entered to the website you only need fill in quick form and then 
 
 <entry>
   <title type="html"><![CDATA[Manage Windows Azure MySQL database]]></title>
-  <link rel="alternate" type="text/html" href="http://tapanila.net/manage-windows-azure-mysql-database/" />
-  <id>http://tapanila.net/manage-windows-azure-mysql-database</id>
+  <link rel="alternate" type="text/html" href="https://tapanila.net/manage-windows-azure-mysql-database/" />
+  <id>https://tapanila.net/manage-windows-azure-mysql-database</id>
   <published>2013-04-17T20:04:00+02:00</published>
   <updated>2013-04-17T20:04:00+02:00</updated>
   <author>
     <name></name>
-    <uri>http://tapanila.net</uri>
+    <uri>https://tapanila.net</uri>
     
   </author>
   <content type="html">&lt;p&gt;Many people started using ClearDB MySQL database on Windows Azure before it was offered through Windows Azure Store which enables easy management of the service. You can still manage those but you need to do few steps before you are able to do that.&lt;!--more--&gt;&lt;/p&gt;
@@ -481,7 +481,7 @@ After you have entered to the website you only need fill in quick form and then 
 	&lt;li&gt;Now you can create your ClearDB account and have your MySQL database connected into it.&lt;/li&gt;
 &lt;/ul&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://tapanila.net/manage-windows-azure-mysql-database/&quot;&gt;Manage Windows Azure MySQL database&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on April 17, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;https://tapanila.net/manage-windows-azure-mysql-database/&quot;&gt;Manage Windows Azure MySQL database&lt;/a&gt; was originally published by  at &lt;a href=&quot;https://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on April 17, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -489,13 +489,13 @@ After you have entered to the website you only need fill in quick form and then 
 
 <entry>
   <title type="html"><![CDATA[Generating JSON]]></title>
-  <link rel="alternate" type="text/html" href="http://tapanila.net/generating-json/" />
-  <id>http://tapanila.net/generating-json</id>
+  <link rel="alternate" type="text/html" href="https://tapanila.net/generating-json/" />
+  <id>https://tapanila.net/generating-json</id>
   <published>2013-02-15T09:00:00+01:00</published>
   <updated>2013-02-15T09:00:00+01:00</updated>
   <author>
     <name></name>
-    <uri>http://tapanila.net</uri>
+    <uri>https://tapanila.net</uri>
     
   </author>
   <content type="html">&lt;p&gt;Generating JSON from your .net classes is very easy. Here’s simple sample how to do it.&lt;/p&gt;
@@ -514,7 +514,7 @@ After you have entered to the website you only need fill in quick form and then 
 &lt;a href=&quot;http://res.cloudinary.com/tapanila-net/image/upload/v1388360608/JsonSample_hpkbre.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-2721&quot; alt=&quot;JsonSample&quot; src=&quot;http://res.cloudinary.com/tapanila-net/image/upload/v1388360608/JsonSample_hpkbre.png&quot; width=&quot;414&quot; height=&quot;239&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://tapanila.net/generating-json/&quot;&gt;Generating JSON&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on February 15, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;https://tapanila.net/generating-json/&quot;&gt;Generating JSON&lt;/a&gt; was originally published by  at &lt;a href=&quot;https://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on February 15, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -522,13 +522,13 @@ After you have entered to the website you only need fill in quick form and then 
 
 <entry>
   <title type="html"><![CDATA[TechDays Finland 2013]]></title>
-  <link rel="alternate" type="text/html" href="http://tapanila.net/techdays-finland-2013/" />
-  <id>http://tapanila.net/techdays-finland-2013</id>
+  <link rel="alternate" type="text/html" href="https://tapanila.net/techdays-finland-2013/" />
+  <id>https://tapanila.net/techdays-finland-2013</id>
   <published>2013-02-07T14:00:00+01:00</published>
   <updated>2013-02-07T14:00:00+01:00</updated>
   <author>
     <name></name>
-    <uri>http://tapanila.net</uri>
+    <uri>https://tapanila.net</uri>
     
   </author>
   <content type="html">&lt;p&gt;I’ll be presenting at &lt;a href=&quot;http://www.techdays.fi/fi/keskiviikko-kehittajat&quot;&gt;TechDays Finland&lt;/a&gt; this year. TechDays is the biggest technology conference in Finland with over 1500 attendees and 5 different developer tracks(Windows 8, Windows Phone 8, Windows Azure, Tools and Experts track).&lt;/p&gt;
@@ -543,7 +543,7 @@ After you have entered to the website you only need fill in quick form and then 
 
 &lt;p&gt;All of my demos, source code and slides will be released here in my blog. The presentations will also be recorded and posted to the TechDays website. If there are any specific cases or questions you’d like me to answer in my presentations, feel free to ask me here or by simply pinging me at twitter!&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://tapanila.net/techdays-finland-2013/&quot;&gt;TechDays Finland 2013&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on February 07, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;https://tapanila.net/techdays-finland-2013/&quot;&gt;TechDays Finland 2013&lt;/a&gt; was originally published by  at &lt;a href=&quot;https://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on February 07, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -551,13 +551,13 @@ After you have entered to the website you only need fill in quick form and then 
 
 <entry>
   <title type="html"><![CDATA[Fetching Facebook Friends using Windows Azure Mobile Services]]></title>
-  <link rel="alternate" type="text/html" href="http://tapanila.net/fetching-facebook-friends-using-windows-azure-mobile-services/" />
-  <id>http://tapanila.net/fetching-facebook-friends-using-windows-azure-mobile-services</id>
+  <link rel="alternate" type="text/html" href="https://tapanila.net/fetching-facebook-friends-using-windows-azure-mobile-services/" />
+  <id>https://tapanila.net/fetching-facebook-friends-using-windows-azure-mobile-services</id>
   <published>2013-02-07T09:00:00+01:00</published>
   <updated>2013-02-07T09:00:00+01:00</updated>
   <author>
     <name></name>
-    <uri>http://tapanila.net</uri>
+    <uri>https://tapanila.net</uri>
     
   </author>
   <content type="html">&lt;p&gt;This tutorial shows you how to fetch Facebook Friends if you have Facebook accessToken.&lt;!--more--&gt;&lt;/p&gt;
@@ -567,7 +567,7 @@ After you have entered to the website you only need fill in quick form and then 
 &lt;p&gt;Here is the the code for Scheduled task called getFriends
 &lt;script src=&quot;https://gist.github.com/4699430.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://tapanila.net/fetching-facebook-friends-using-windows-azure-mobile-services/&quot;&gt;Fetching Facebook Friends using Windows Azure Mobile Services&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on February 07, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;https://tapanila.net/fetching-facebook-friends-using-windows-azure-mobile-services/&quot;&gt;Fetching Facebook Friends using Windows Azure Mobile Services&lt;/a&gt; was originally published by  at &lt;a href=&quot;https://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on February 07, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -575,13 +575,13 @@ After you have entered to the website you only need fill in quick form and then 
 
 <entry>
   <title type="html"><![CDATA[Events]]></title>
-  <link rel="alternate" type="text/html" href="http://tapanila.net/events/" />
-  <id>http://tapanila.net/events</id>
+  <link rel="alternate" type="text/html" href="https://tapanila.net/events/" />
+  <id>https://tapanila.net/events</id>
   <published>2013-02-02T11:47:00+01:00</published>
   <updated>2013-02-02T11:47:00+01:00</updated>
   <author>
     <name></name>
-    <uri>http://tapanila.net</uri>
+    <uri>https://tapanila.net</uri>
     
   </author>
   <content type="html">&lt;p&gt;I will gather here all of the events where I’m going to participate and where I have participated.&lt;/p&gt;
@@ -641,7 +641,7 @@ After you have entered to the website you only need fill in quick form and then 
 	&lt;li&gt;19th, &lt;a href=&quot;http://apptalk-tre.eventbrite.com/&quot;&gt;AppTalk Tampere&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://tapanila.net/events/&quot;&gt;Events&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on February 02, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;https://tapanila.net/events/&quot;&gt;Events&lt;/a&gt; was originally published by  at &lt;a href=&quot;https://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on February 02, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -649,13 +649,13 @@ After you have entered to the website you only need fill in quick form and then 
 
 <entry>
   <title type="html"><![CDATA[Windows Azure Active Directory Access Control with Visual Studio 2012]]></title>
-  <link rel="alternate" type="text/html" href="http://tapanila.net/windows-azure-active-directory-access-control-with-visual-studio-2012/" />
-  <id>http://tapanila.net/windows-azure-active-directory-access-control-with-visual-studio-2012</id>
+  <link rel="alternate" type="text/html" href="https://tapanila.net/windows-azure-active-directory-access-control-with-visual-studio-2012/" />
+  <id>https://tapanila.net/windows-azure-active-directory-access-control-with-visual-studio-2012</id>
   <published>2013-01-30T13:47:00+01:00</published>
   <updated>2013-01-30T13:47:00+01:00</updated>
   <author>
     <name></name>
-    <uri>http://tapanila.net</uri>
+    <uri>https://tapanila.net</uri>
     
   </author>
   <content type="html">&lt;p&gt;This guide shows you how to use Windows Azure Active Directory Access Control (also known as Access Control Service or ACS)&lt;/p&gt;
@@ -718,7 +718,7 @@ After you have entered to the website you only need fill in quick form and then 
 &lt;p&gt;Update 29.7.2013:
 If you have Runtime/Server issues when you have deployed this to Azure follow this &lt;a href=&quot;http://denepalmer.azurewebsites.net/index.php/how-to-fix-runtimeserver-error-redirect-issues-when-adding-azure-acs-authentication-to-an-asp-net-project/&quot;&gt;guide&lt;/a&gt;.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://tapanila.net/windows-azure-active-directory-access-control-with-visual-studio-2012/&quot;&gt;Windows Azure Active Directory Access Control with Visual Studio 2012&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on January 30, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;https://tapanila.net/windows-azure-active-directory-access-control-with-visual-studio-2012/&quot;&gt;Windows Azure Active Directory Access Control with Visual Studio 2012&lt;/a&gt; was originally published by  at &lt;a href=&quot;https://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on January 30, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -726,13 +726,13 @@ If you have Runtime/Server issues when you have deployed this to Azure follow th
 
 <entry>
   <title type="html"><![CDATA[Fetching Tweets by multiple hashtags using Windows Azure Mobile Services]]></title>
-  <link rel="alternate" type="text/html" href="http://tapanila.net/fetching-tweets-by-multiple-hashtags-using-windows-azure-mobile-services/" />
-  <id>http://tapanila.net/fetching-tweets-by-multiple-hashtags-using-windows-azure-mobile-services</id>
+  <link rel="alternate" type="text/html" href="https://tapanila.net/fetching-tweets-by-multiple-hashtags-using-windows-azure-mobile-services/" />
+  <id>https://tapanila.net/fetching-tweets-by-multiple-hashtags-using-windows-azure-mobile-services</id>
   <published>2013-01-23T08:00:00+01:00</published>
   <updated>2013-01-23T08:00:00+01:00</updated>
   <author>
     <name></name>
-    <uri>http://tapanila.net</uri>
+    <uri>https://tapanila.net</uri>
     
   </author>
   <content type="html">&lt;p&gt;&lt;a title=&quot;Fetching Tweets using Windows Azure Mobile Services&quot; href=&quot;http://www.tapanila.net/fetching-tweets-using-windows-azure-mobile-services/&quot;&gt;In my previous post&lt;/a&gt; I went through the whole process how to create new Windows Azure Mobile Services project and adding the scheduler for fetching tweets based on single tweet.&lt;!--more--&gt; Here’s same sample except now it enables you to add the wanted hashtags to table and then fetch all of them.&lt;/p&gt;
@@ -740,7 +740,7 @@ If you have Runtime/Server issues when you have deployed this to Azure follow th
 &lt;p&gt;You only need to create one new table called hashtags and copy paste the javascript to getTweets scheduler.
 &lt;script type=&quot;text/javascript&quot; src=&quot;https://gist.github.com/4594903.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://tapanila.net/fetching-tweets-by-multiple-hashtags-using-windows-azure-mobile-services/&quot;&gt;Fetching Tweets by multiple hashtags using Windows Azure Mobile Services&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on January 23, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;https://tapanila.net/fetching-tweets-by-multiple-hashtags-using-windows-azure-mobile-services/&quot;&gt;Fetching Tweets by multiple hashtags using Windows Azure Mobile Services&lt;/a&gt; was originally published by  at &lt;a href=&quot;https://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on January 23, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -748,13 +748,13 @@ If you have Runtime/Server issues when you have deployed this to Azure follow th
 
 <entry>
   <title type="html"><![CDATA[Fetching Tweets using Windows Azure Mobile Services]]></title>
-  <link rel="alternate" type="text/html" href="http://tapanila.net/fetching-tweets-using-windows-azure-mobile-services/" />
-  <id>http://tapanila.net/fetching-tweets-using-windows-azure-mobile-services</id>
+  <link rel="alternate" type="text/html" href="https://tapanila.net/fetching-tweets-using-windows-azure-mobile-services/" />
+  <id>https://tapanila.net/fetching-tweets-using-windows-azure-mobile-services</id>
   <published>2013-01-17T13:12:00+01:00</published>
   <updated>2013-01-17T13:12:00+01:00</updated>
   <author>
     <name></name>
-    <uri>http://tapanila.net</uri>
+    <uri>https://tapanila.net</uri>
     
   </author>
   <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.windowsazure.com/en-us/develop/mobile/&quot;&gt;Windows Azure Mobile Services&lt;/a&gt; is one the newest things that have been added to Windows Azure. It’s goal is to enable front-end developers easily to create a backend. It seriously is easy and require just few click and you are done with creating backend. This tutorial will focus on how to use Scheduler of Mobile Services to fetch data from twitter and then store it into Mobile Services.
@@ -794,7 +794,7 @@ If you have Runtime/Server issues when you have deployed this to Azure follow th
 &lt;script src=&quot;https://gist.github.com/tapanila/4594903.js&quot;&gt;&lt;/script&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://tapanila.net/fetching-tweets-using-windows-azure-mobile-services/&quot;&gt;Fetching Tweets using Windows Azure Mobile Services&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on January 17, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;https://tapanila.net/fetching-tweets-using-windows-azure-mobile-services/&quot;&gt;Fetching Tweets using Windows Azure Mobile Services&lt;/a&gt; was originally published by  at &lt;a href=&quot;https://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on January 17, 2013.&lt;/p&gt;</content>
 </entry>
 
 </feed>
