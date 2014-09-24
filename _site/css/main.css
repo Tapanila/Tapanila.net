@@ -53,6 +53,10 @@ figcaption {
 /**
  * Lists
  */
+ul, ol {
+  -webkit-padding-start: 0px;
+}
+
 li > ul,
 li > ol {
   margin-bottom: 0;
