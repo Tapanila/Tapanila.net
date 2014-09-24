@@ -1,0 +1,800 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+<title type="text">Tapanila.net</title>
+<generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
+<link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
+<link rel="alternate" type="text/html" href="http://localhost:4000" />
+<updated>2014-09-24T15:07:13+02:00</updated>
+<id>http://localhost:4000/</id>
+<author>
+  <name>Teemu Tapanila</name>
+  <uri>http://localhost:4000/</uri>
+  <email>teemu@tapanila.net</email>
+</author>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Windows Phone 8 with Caliburn Micro Data Binding]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/windows-phone-8-with-caliburn-micro-data-binding/" />
+  <id>http://localhost:4000/windows-phone-8-with-caliburn-micro-data-binding</id>
+  <published>2014-02-09T00:53:00+01:00</published>
+  <updated>2014-02-09T00:53:00+01:00</updated>
+  <author>
+    <name></name>
+    <uri>http://localhost:4000</uri>
+    
+  </author>
+  <content type="html">&lt;p&gt;Most powerful feature of Caliburn Micro is Data Binding. It connects your data logic and view together. It also make sure that whenever value is changed on logic side that change is reflected into view.&lt;/p&gt;
+
+&lt;p&gt;Another thing that we are using is Design-Time Support which basically enables you to see what the UI would look like without starting emulator.&lt;/p&gt;
+
+&lt;p&gt;Lets get started&lt;/p&gt;
+&lt;ol&gt;
+	&lt;li&gt;This continues from the template we created &lt;a title=&quot;Windows Phone 8 with Caliburn Micro&quot; href=&quot;http://tapanila.net/windows-phone-8-with-caliburn-micro/&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Define layout (Header, LongListSelector, TextBlock and Button) on MainPage.xaml
+&lt;script src=&quot;https://gist.github.com/8890673.js&quot;&gt; &lt;/script&gt;&lt;/li&gt;
+	&lt;li&gt;Enabled Design-Time support and 3 different bindings on the view&lt;/li&gt;
+	&lt;li&gt;Edit MainPageViewModel.cs
+&lt;script src=&quot;https://gist.github.com/8890763.js&quot;&gt; &lt;/script&gt;&lt;/li&gt;
+	&lt;li&gt;Launch emulator and enjoy!
+&lt;img class=&quot;alignnone wp-image-6091&quot; alt=&quot;&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_610/v1391895909/Windows_Phone_Emulator_nv1c81.png&quot; width=&quot;610&quot; height=&quot;1066&quot; /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If you have anything to ask about data binding just leave a comment.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/windows-phone-8-with-caliburn-micro-data-binding/&quot;&gt;Windows Phone 8 with Caliburn Micro Data Binding&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;Tapanila.net&lt;/a&gt; on February 09, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Windows Phone 8 with Caliburn Micro]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/windows-phone-8-with-caliburn-micro/" />
+  <id>http://localhost:4000/windows-phone-8-with-caliburn-micro</id>
+  <published>2014-02-02T22:54:00+01:00</published>
+  <updated>2014-02-02T22:54:00+01:00</updated>
+  <author>
+    <name>Teemu Tapanila</name>
+    <uri>http://localhost:4000</uri>
+    <email>teemu@tapanila.net</email>
+  </author>
+  <content type="html">&lt;p&gt;I love Model View ViewModel (MVVM) pattern when doing Windows Phone or Windows 8 development. It allows nice separation of UI and code which gives your project very good structure. There’s basically two common MVVM toolkits out which are &lt;a href=&quot;http://mvvmlight.codeplex.com/&quot;&gt;MVVM Light&lt;/a&gt; and &lt;a href=&quot;https://caliburnmicro.codeplex.com/&quot;&gt;Caliburn Micro&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I first used MVVM light heavily but have recently moved over into Caliburn Micro. Biggest difference is that caliburn uses naming convention while mvvm light doesn’t. Using naming conventions makes you fast but it also raises the barrier if someone not familiar with the pattern is looking at your code.&lt;/p&gt;
+
+&lt;p&gt;Considering the facts I do recommend using Caliburn Micro and here’s sample how to get started and Build Windows Phone 8 hello world with Caliburn Micro.&lt;/p&gt;
+&lt;ol&gt;
+	&lt;li&gt;Create new Windows Phone 8 basic project&lt;/li&gt;
+	&lt;li&gt;Install Caliburn.Micro.Start nuget package
+&lt;img class=&quot;alignnone wp-image-5951&quot; alt=&quot;&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_601/v1391370341/Caliburn_Micro_Start_Nuget_Package_cdlfdl.png&quot; width=&quot;601&quot; height=&quot;406&quot; /&gt;&lt;/li&gt;
+	&lt;li&gt;Create new folder into your project &quot;Views&quot;
+&lt;img class=&quot;alignnone wp-image-5961&quot; alt=&quot;&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_601/v1391370341/Add_new_folder_migkkr.png&quot; width=&quot;601&quot; height=&quot;708&quot; /&gt;&lt;/li&gt;
+	&lt;li&gt;Create new folder into your project &quot;ViewModels&quot;
+&lt;img class=&quot;alignnone wp-image-5971&quot; alt=&quot;&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_601/v1391370341/New_folder_viewmodels_and_views_hxsbjk.png&quot; width=&quot;601&quot; height=&quot;807&quot; /&gt;&lt;/li&gt;
+	&lt;li&gt;Drag MainPage.xaml and MainPageViewModel.cs to their folders
+&lt;img class=&quot;alignnone wp-image-5981&quot; alt=&quot;&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_601/v1391370341/MVVM_structure_cdo3vo.png&quot; width=&quot;601&quot; height=&quot;348&quot; /&gt;&lt;/li&gt;
+	&lt;li&gt;Change Navigation Page from WMAppManifest.xml to &quot;Views/MainPage.xaml&quot;
+&lt;img class=&quot;alignnone wp-image-6051&quot; alt=&quot;&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_610/v1391892814/WMAppManifest_zohhhz.png&quot; width=&quot;610&quot; height=&quot;459&quot; /&gt;&lt;/li&gt;
+	&lt;li&gt;Remove everything else than InitializeComponent() from app.xaml.cs
+&lt;script src=&quot;https://gist.github.com/8773744.js&quot;&gt; &lt;/script&gt;&lt;/li&gt;
+	&lt;li&gt;Edit your app.xaml
+&lt;script src=&quot;https://gist.github.com/8773753.js&quot;&gt; &lt;/script&gt;&lt;/li&gt;
+	&lt;li&gt;Prepare your first viewmodel
+&lt;script src=&quot;https://gist.github.com/8773761.js&quot;&gt; &lt;/script&gt;&lt;/li&gt;
+	&lt;li&gt;Clean MainPage.xaml.cs
+&lt;script src=&quot;https://gist.github.com/8890153.js&quot;&gt; &lt;/script&gt;&lt;/li&gt;
+	&lt;li&gt;Enjoy your end results
+&lt;img class=&quot;alignnone wp-image-5991&quot; alt=&quot;&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/q_100/v1391370341/Hello_World_Windows_Phone_Emulator_f8tflc.png&quot; width=&quot;380&quot; height=&quot;632&quot; /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If you have any questions regarding how to use Caliburn Micro with Windows Phone 8 or Windows 8 please do so on comments.
+Whole solution can be found &lt;a href=&quot;https://github.com/tapanila/TT-WP8-Caliburn-1&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/windows-phone-8-with-caliburn-micro/&quot;&gt;Windows Phone 8 with Caliburn Micro&lt;/a&gt; was originally published by Teemu Tapanila at &lt;a href=&quot;http://localhost:4000&quot;&gt;Tapanila.net&lt;/a&gt; on February 02, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Facebook Single sign-on on Windows Phone 8 with Windows Azure Mobile Services]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/facebook-single-sign-on-on-windows-phone-8-with-windows-azure-mobile-services/" />
+  <id>http://localhost:4000/facebook-single-sign-on-on-windows-phone-8-with-windows-azure-mobile-services</id>
+  <published>2014-01-26T19:54:00+01:00</published>
+  <updated>2014-01-26T19:54:00+01:00</updated>
+  <author>
+    <name></name>
+    <uri>http://localhost:4000</uri>
+    
+  </author>
+  <content type="html">&lt;p&gt;Using Facebook single sign-on on Windows Phone 8 applications allows user very easy way to register/login to your application without filling forms. But it still requires user to enter Facebook login credentials to your application or Facebook web form. To avoid this you can use Facebook SSO (Single Sign On) which basically means that when you want to do authentication against Facebook on your application. You just redirect user to Facebook Windows Phone application where user can simply accept your application and whole authorization is done.&lt;/p&gt;
+
+&lt;p&gt;To use this feature you need to prepare your application with these steps:&lt;/p&gt;
+&lt;ol&gt;
+	&lt;li&gt;Create a new Windows Azure Mobile Service and follow &lt;a href=&quot;http://www.windowsazure.com/en-us/documentation/articles/mobile-services-windows-phone-get-started-users/&quot;&gt;this guide&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Open the visual studio project that you downloaded and edited on step 1&lt;/li&gt;
+	&lt;li&gt;Open WMAppManifest.xml on Code View
+&lt;img class=&quot;alignnone wp-image-5851&quot; alt=&quot;&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/q_100/v1390752735/WMAppManifest_View_Code_kt3hxp.png&quot; width=&quot;420&quot; height=&quot;878&quot; /&gt;&lt;/li&gt;
+	&lt;li&gt;Edit WMAppManifest by adding the Extensions and Protocol. Protocol name should be same as your ProductID without dashes and with msft- prefix
+&lt;script src=&quot;https://gist.github.com/8634761.js&quot;&gt; &lt;/script&gt;&lt;/li&gt;
+	&lt;li&gt;Open Package Manager Console
+&lt;img class=&quot;alignnone wp-image-5861&quot; alt=&quot;&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_601/v1390752729/Package_Manager_Console_VS2013_ciqdgp.png&quot; width=&quot;601&quot; height=&quot;442&quot; /&gt;&lt;/li&gt;
+	&lt;li&gt;Run Install-Package Facebook.Client -pre
+&lt;img class=&quot;alignnone wp-image-5871&quot; alt=&quot;&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_601/v1390752739/Package_Manager_Console_Install_VS2013_wjufdq.png&quot; width=&quot;601&quot; height=&quot;299&quot; /&gt;&lt;/li&gt;
+	&lt;li&gt;Create new class called CustomURIMapper
+&lt;img class=&quot;alignnone wp-image-5901&quot; alt=&quot;&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_601/v1390753621/Create_New_Class_VS_2013_upi4vi.png&quot; width=&quot;601&quot; height=&quot;743&quot; /&gt;&lt;/li&gt;
+	&lt;li&gt;Here&#39;s all the code for the class
+&lt;script src=&quot;https://gist.github.com/8634888.js&quot;&gt; &lt;/script&gt;&lt;/li&gt;
+	&lt;li&gt;Open App.xaml.cs and edit InitilizationPhoneApplication() method
+&lt;script src=&quot;https://gist.github.com/8634932.js&quot;&gt; &lt;/script&gt;&lt;/li&gt;
+	&lt;li&gt;Edit MainPage.xaml.cs
+&lt;script src=&quot;https://gist.github.com/8635018.js&quot;&gt; &lt;/script&gt;&lt;/li&gt;
+	&lt;li&gt;Go to &lt;a href=&quot;https://developers.facebook.com&quot;&gt;Facebook developers&lt;/a&gt; and insert your windows phone application product ID without dashes into &quot;Windows Phone Store ID&quot; field
+&lt;img class=&quot;alignnone wp-image-5911&quot; alt=&quot;&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_601/v1390755215/Facebook_Developers_App_Basic_WP8_n4d1oc.png&quot; width=&quot;601&quot; height=&quot;430&quot; /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now when user opens the app he will be redirected to Facebook for authenticating the app. Once he’s done he will be back into the application and authentication is done. If the user doesn’t have Facebook application installed he will be redirected to Windows Phone store to install it.&lt;/p&gt;
+
+&lt;p&gt;Complete solution can be found from &lt;a href=&quot;https://github.com/tapanila/TTWP8-Facebook-SSO&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Any questions or comments?&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/facebook-single-sign-on-on-windows-phone-8-with-windows-azure-mobile-services/&quot;&gt;Facebook Single sign-on on Windows Phone 8 with Windows Azure Mobile Services&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;Tapanila.net&lt;/a&gt; on January 26, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Services that I use on Tapanila.net]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/services-that-i-use-on-tapanila-net/" />
+  <id>http://localhost:4000/services-that-i-use-on-tapanila-net</id>
+  <published>2014-01-18T19:42:00+01:00</published>
+  <updated>2014-01-18T19:42:00+01:00</updated>
+  <author>
+    <name></name>
+    <uri>http://localhost:4000</uri>
+    
+  </author>
+  <content type="html">&lt;p&gt;I’m running Tapanila.net on Windows Azure Websites and using Wordpress. The biggest reason why I chose Wordpress and why I’m still using it is the amount of themes, plugins and services available for it. I use a lot of different services on my blog and here’s a list of them:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;https://www.cloudflare.com/&quot;&gt;CloudFlare&lt;/a&gt; - DNS&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://disqus.com/&quot;&gt;Disqus &lt;/a&gt;- Commenting&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://cloudinary.com/&quot;&gt;Cloudinary&lt;/a&gt; - All pictures on my blog are hosted on cloudinary. I upload full sized pictures into their service and it  resize them to perfectly fit my blog layout&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;https://gist.github.com/&quot;&gt;Gist &lt;/a&gt;- Sharing my source code samples&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://wordpress.org/plugins/starbox/&quot;&gt;Starbox&lt;/a&gt; - Author box in bottom of my posts&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://sendgrid.com/&quot;&gt;Sendgrid &lt;/a&gt;- Takes care of all the emails my blog sends&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://wordpress.org/plugins/wp-super-cache/&quot;&gt;WP SuperCache -&lt;/a&gt; Caching my Wordpress&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you have any questions regarding any of the services that I use or why did I choose these just ask on comments.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/services-that-i-use-on-tapanila-net/&quot;&gt;Services that I use on Tapanila.net&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;Tapanila.net&lt;/a&gt; on January 18, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Windows Azure Mobile Services at CloudBrew]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/windows-azure-mobile-services-at-cloudbrew/" />
+  <id>http://localhost:4000/windows-azure-mobile-services-at-cloudbrew</id>
+  <published>2014-01-12T18:30:00+01:00</published>
+  <updated>2014-01-12T18:30:00+01:00</updated>
+  <author>
+    <name></name>
+    <uri>http://localhost:4000</uri>
+    
+  </author>
+  <content type="html">&lt;p&gt;During december 2013 I was talking about Windows Azure Mobile Service at &lt;a href=&quot;http://cloudbrew.be&quot;&gt;CloudBrew&lt;/a&gt;.
+[slideshare id=29928262&amp;amp;doc=7-140112092030-phpapp02]&lt;/p&gt;
+
+&lt;p&gt;Any questions or comments?&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/windows-azure-mobile-services-at-cloudbrew/&quot;&gt;Windows Azure Mobile Services at CloudBrew&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;Tapanila.net&lt;/a&gt; on January 12, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Windows Azure Storage SDK now supports Windows Phone 8]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/windows-azure-storage-sdk-now-supports-windows-phone-8/" />
+  <id>http://localhost:4000/windows-azure-storage-sdk-now-supports-windows-phone-8</id>
+  <published>2013-09-14T01:42:00+02:00</published>
+  <updated>2013-09-14T01:42:00+02:00</updated>
+  <author>
+    <name></name>
+    <uri>http://localhost:4000</uri>
+    
+  </author>
+  <content type="html">&lt;p&gt;Windows Azure Storage team has released preview version of the SDK which supports Windows Phone 8&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;This means that you can now directly use Windows Azure Storage features from your phone and there’s no requirement to build API and publish it on Azure Websites. This is perfect for application where you want to store pictures or files.&lt;/p&gt;
+
+&lt;p&gt;Here’s short tutorial how to use it in your Windows Phone app:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;Create new project
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360458/Create-Windows-Phone-8-Project_gc88b6.png&quot;&gt;&lt;img class=&quot;alignnone  wp-image-4091&quot; alt=&quot;Create Windows Phone 8 Project&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_601/v1388360458/Create-Windows-Phone-8-Project_gc88b6.png&quot; width=&quot;601&quot; height=&quot;383&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Open Package Manager Console
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360457/Package-Manager-Console_flviju.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-4101&quot; alt=&quot;Package Manager Console&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_600/v1388360457/Package-Manager-Console_flviju.png&quot; width=&quot;600&quot; height=&quot;413&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Install Windows Azure Storage client
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360456/Install-Windows-Azure-Storage-Preview_ebfvzu.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-4111&quot; alt=&quot;Install Windows Azure Storage Preview&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_600/v1388360456/Install-Windows-Azure-Storage-Preview_ebfvzu.png&quot; width=&quot;600&quot; height=&quot;193&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Edit MainPage.xaml.cs
+&lt;script src=&quot;https://gist.github.com/6556943.js&quot;&gt; &lt;/script&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Found this useful or want more complex example?&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/windows-azure-storage-sdk-now-supports-windows-phone-8/&quot;&gt;Windows Azure Storage SDK now supports Windows Phone 8&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;Tapanila.net&lt;/a&gt; on September 14, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Windows Azure Mobile Services Custom API for existing SQL Database]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/windows-azure-mobile-services-custom-api-for-existing-sql-database/" />
+  <id>http://localhost:4000/windows-azure-mobile-services-custom-api-for-existing-sql-database</id>
+  <published>2013-06-24T18:00:00+02:00</published>
+  <updated>2013-06-24T18:00:00+02:00</updated>
+  <author>
+    <name></name>
+    <uri>http://localhost:4000</uri>
+    
+  </author>
+  <content type="html">&lt;p&gt;Sometimes you have existing SQL database where you would like to expose some custom queries results
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;So there’s existing SQL database that has two tables Person and Orders. Custom API needs to query them with a parameter that’s given and then return result as JSON.&lt;/p&gt;
+&lt;ol&gt;
+	&lt;li&gt;Create new Mobile Service and choose use exising SQL database
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360468/Create-new-Windows-Azure-Mobile-Service-using-existing-database_nkypll.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-3761&quot; alt=&quot;Create new Windows Azure Mobile Service using existing database&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_600/v1388360468/Create-new-Windows-Azure-Mobile-Service-using-existing-database_nkypll.png&quot; width=&quot;600&quot; height=&quot;399&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Fill in your username and password
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360469/Create-new-Windows-Azure-Mobile-Service-using-existing-database-2_qsub1b.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-3751&quot; alt=&quot;Create new Windows Azure Mobile Service using existing database 2&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_600/v1388360469/Create-new-Windows-Azure-Mobile-Service-using-existing-database-2_qsub1b.png&quot; width=&quot;600&quot; height=&quot;398&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Open your new mobile service and go to API tab
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360471/Windows-Azure-Mobile-Service-API-tab_mfd1sp.png&quot;&gt;&lt;img class=&quot;alignnone  wp-image-3741&quot; alt=&quot;Windows Azure Mobile Service API tab&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_600/v1388360471/Windows-Azure-Mobile-Service-API-tab_mfd1sp.png&quot; width=&quot;600&quot; height=&quot;178&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Create new API and set GET Permission to everyone (for easy testing)
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360472/Windows-Azure-Mobile-Service-new-Custom-API_sk1uao.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-3731&quot; alt=&quot;Windows Azure Mobile Service new Custom API&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_600/v1388360472/Windows-Azure-Mobile-Service-new-Custom-API_sk1uao.png&quot; width=&quot;600&quot; height=&quot;520&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Edit the script (Code can be find below) and save it
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360474/Windows-Azure-Mobile-Service-API-javascript_cv8nle.png&quot;&gt;&lt;img class=&quot;alignnone  wp-image-3721&quot; alt=&quot;Windows Azure Mobile Service API javascript&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_600/v1388360474/Windows-Azure-Mobile-Service-API-javascript_cv8nle.png&quot; width=&quot;600&quot; height=&quot;166&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Browse to your mobileservice url/api/sql?id=1 to see the results&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Javascript Code:&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/5849491.js&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;P.S. Note that if you get error that looks like this on windows azure mobile services log. Error occurred executing query: Error: [Microsoft][SQL Server Native Client 10.0][SQL Server]The SELECT permission was denied on the object ‘Orders’, database ‘TapanilaDemo’, schema ‘dbo’. It means that you need to grant the Windows Azure Mobile Services read rights to the schema.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/windows-azure-mobile-services-custom-api-for-existing-sql-database/&quot;&gt;Windows Azure Mobile Services Custom API for existing SQL Database&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;Tapanila.net&lt;/a&gt; on June 24, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Twitter reader for Logitech G15 keyboard]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/twitter-reader-for-logitech-g15-keyboard/" />
+  <id>http://localhost:4000/twitter-reader-for-logitech-g15-keyboard</id>
+  <published>2013-06-21T19:16:00+02:00</published>
+  <updated>2013-06-21T19:16:00+02:00</updated>
+  <author>
+    <name></name>
+    <uri>http://localhost:4000</uri>
+    
+  </author>
+  <content type="html">&lt;p&gt;I created Twitter reader for Logitech G15 Keyboard.
+&lt;!--more--&gt;Logitech G15 is keyboard with nice LCD (160x43 pixels) on it. I created the reader for this using Windows Azure Mobile Services as backend. I used it because I already had all of the necessary code ready from &lt;a title=&quot;Creating Twitter reader using Windows Azure Mobile Services&quot; href=&quot;http://www.tapanila.net/creating-twitter-reader-using-windows-azure-mobile-services/&quot;&gt;previous project&lt;/a&gt; and it was very easy to use it.&lt;/p&gt;
+
+&lt;p&gt;.net wrapper and sample template that I used are from &lt;a href=&quot;http://www.mangareader.com/dmclglcd.html&quot;&gt;Minute Made Software&lt;/a&gt;. I also created &lt;a href=&quot;http://nuget.org/packages/LogitechG15/&quot;&gt;nugget package&lt;/a&gt; for easier use in future. Note that whole solution can be downloaded from bottom of the post.&lt;/p&gt;
+
+&lt;p&gt;Two screenshots about end product
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360477/WP_20130621_002_qsuksw.jpg&quot;&gt;&lt;img class=&quot;alignnone  wp-image-3611&quot; alt=&quot;Logitech G15 and Samsung Slate&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360477/WP_20130621_002_qsuksw.jpg&quot; width=&quot;717&quot; height=&quot;403&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360476/WP_20130621_006_vpj0zj.jpg&quot;&gt;&lt;img class=&quot;alignnone  wp-image-3621&quot; alt=&quot;Logitech G15 lcd&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360476/WP_20130621_006_vpj0zj.jpg&quot; width=&quot;717&quot; height=&quot;403&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Backend:
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://gist.github.com/tapanila/5832223.js&quot;&gt;&lt;/script&gt;Client:&lt;script type=&quot;text/javascript&quot; src=&quot;https://gist.github.com/tapanila/5832279.js&quot;&gt;&lt;/script&gt;
+&lt;a href=&quot;http://www.tapanila.net/wp-content/uploads/2013/06/G15-Twitter-Reader.rar&quot;&gt;Whole solution&lt;/a&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/twitter-reader-for-logitech-g15-keyboard/&quot;&gt;Twitter reader for Logitech G15 keyboard&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;Tapanila.net&lt;/a&gt; on June 21, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Creating Twitter reader using Windows Azure Mobile Services]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/creating-twitter-reader-using-windows-azure-mobile-services/" />
+  <id>http://localhost:4000/creating-twitter-reader-using-windows-azure-mobile-services</id>
+  <published>2013-06-15T20:57:00+02:00</published>
+  <updated>2013-06-15T20:57:00+02:00</updated>
+  <author>
+    <name></name>
+    <uri>http://localhost:4000</uri>
+    
+  </author>
+  <content type="html">&lt;p&gt;You can now easily create twitter reader using Windows Azure Mobile Services features custom API, Git support and NPM (Node Package Manager) support
+&lt;!--more--&gt;&lt;/p&gt;
+&lt;ol&gt;
+	&lt;li&gt;Create new mobile service (You can use free 20 MB SQL database)
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360560/Create-new-windows-azure-mobile-service_darelu.png&quot;&gt;&lt;img class=&quot;alignnone  wp-image-3311&quot; alt=&quot;Create new windows azure mobile service&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360560/Create-new-windows-azure-mobile-service_darelu.png&quot; width=&quot;645&quot; height=&quot;388&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Choose Database details
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360561/Create-new-windows-azure-mobile-service-part-2_ke7x0d.png&quot;&gt;&lt;img class=&quot;alignnone  wp-image-3301&quot; alt=&quot;Create new windows azure mobile service part 2&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360561/Create-new-windows-azure-mobile-service-part-2_ke7x0d.png&quot; width=&quot;655&quot; height=&quot;394&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Open the dashboard and click Set up source control
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360486/Windows-Azure-Mobile-Service-setup-source-control_ybmfl2.png&quot;&gt;&lt;img class=&quot;alignnone  wp-image-3431&quot; alt=&quot;Windows Azure Mobile Service setup source control&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360486/Windows-Azure-Mobile-Service-setup-source-control_ybmfl2.png&quot; width=&quot;655&quot; height=&quot;394&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;From bottom choose yes
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360565/confirm-source-control_lnp9yn.png&quot;&gt;&lt;img class=&quot;alignnone  wp-image-3281&quot; alt=&quot;confirm source control&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360565/confirm-source-control_lnp9yn.png&quot; width=&quot;655&quot; height=&quot;394&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;You can see the status on bottom bar
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360489/Wait-until-completed_zeapam.png&quot;&gt;&lt;img class=&quot;alignnone  wp-image-3421&quot; alt=&quot;Wait until completed&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360489/Wait-until-completed_zeapam.png&quot; width=&quot;655&quot; height=&quot;394&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Go to Data tab while waiting
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360484/Windows-Azure-Mobile-Services-Data-Tab_xjtyjo.png&quot;&gt;&lt;img class=&quot;alignnone  wp-image-3441&quot; alt=&quot;Windows Azure Mobile Services Data Tab&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360484/Windows-Azure-Mobile-Services-Data-Tab_xjtyjo.png&quot; width=&quot;655&quot; height=&quot;394&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Create new table and call it &quot;tweets&quot;
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360558/Creating-new-table-Tweets_afjaec.png&quot;&gt;&lt;img class=&quot;alignnone  wp-image-3321&quot; alt=&quot;Creating new table Tweets&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360558/Creating-new-table-Tweets_afjaec.png&quot; width=&quot;655&quot; height=&quot;394&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Go to API tab
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360556/Custom-API-Tab_aji6ji.png&quot;&gt;&lt;img class=&quot;alignnone  wp-image-3331&quot; alt=&quot;Custom API Tab&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360556/Custom-API-Tab_aji6ji.png&quot; width=&quot;655&quot; height=&quot;394&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Create new API and call it &quot;tweets&quot;. Make sure that you put GET permission as everyone to make testing a lot easier.
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360563/Create-new-custom-API-tweets_nwxddk.png&quot;&gt;&lt;img class=&quot;alignnone  wp-image-3291&quot; alt=&quot;Create new custom API tweets&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360563/Create-new-custom-API-tweets_nwxddk.png&quot; width=&quot;655&quot; height=&quot;394&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Go configure tab and click copy icon on GIT URL
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360566/Configure-GIT-URL_tcbj5i.png&quot;&gt;&lt;img class=&quot;alignnone  wp-image-3271&quot; alt=&quot;Configure GIT URL&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360566/Configure-GIT-URL_tcbj5i.png&quot; width=&quot;655&quot; height=&quot;394&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Open PowerShell and navigate to folder you want and type &quot;Git clone [Your url]&quot;
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360550/PowerShell-Git-Clone_micjfz.png&quot;&gt;&lt;img class=&quot;alignnone  wp-image-3371&quot; alt=&quot;PowerShell Git Clone&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360550/PowerShell-Git-Clone_micjfz.png&quot; width=&quot;638&quot; height=&quot;411&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Now you can open file explorer to that view by typing explorer .[your servicename]
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360483/Windows-Explorer-view_w8fvcu.png&quot;&gt;&lt;img class=&quot;alignnone  wp-image-3451&quot; alt=&quot;Windows Explorer view&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360483/Windows-Explorer-view_w8fvcu.png&quot; width=&quot;655&quot; height=&quot;395&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Open tweets.js from your service/api folder
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360524/Tweet_js-on-file-explorer_a8nbgh.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-3401&quot; alt=&quot;Tweet.js on file explorer&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360524/Tweet_js-on-file-explorer_a8nbgh.png&quot; width=&quot;840&quot; height=&quot;1010&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Edit with your favorite editor (I used Notepad++). Source code is at below for copy pasting.&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360481/Tweet_js-on-notepad_u2d2hb.png&quot;&gt;&lt;img class=&quot;alignnone  wp-image-3491&quot; alt=&quot;Tweet.js on notepad&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360481/Tweet_js-on-notepad_u2d2hb.png&quot; width=&quot;655&quot; height=&quot;394&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Navigate to service folder in your project and then write &quot;npm install twit --save&quot;
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360549/PowerShell-NPM-Install_tyjfg2.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-3381&quot; alt=&quot;PowerShell NPM Install&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360549/PowerShell-NPM-Install_tyjfg2.png&quot; width=&quot;530&quot; height=&quot;140&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Write &quot;Git add .&quot; (Warnings are fine)
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360552/Powershell-Git-Add_xqi688.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-3361&quot; alt=&quot;Powershell Git Add&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360552/Powershell-Git-Add_xqi688.png&quot; width=&quot;802&quot; height=&quot;928&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Write Git commit &quot;Installed twit with NPM&quot;
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360555/Git-Commit_ftyxw0.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-3341&quot; alt=&quot;Git Commit&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360555/Git-Commit_ftyxw0.png&quot; width=&quot;805&quot; height=&quot;679&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Write Git push
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360553/Git-Push_pqawzn.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-3351&quot; alt=&quot;Git Push&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360553/Git-Push_pqawzn.png&quot; width=&quot;845&quot; height=&quot;1008&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Test your site out by browsing &lt;a href=&quot;http://tapanilatwitter.azure-mobile.net/api/tweets&quot;&gt;http://tapanilatwitter.azure-mobile.net/api/tweets
+&lt;script src=&quot;https://gist.github.com/5788819.js&quot;&gt; &lt;/script&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;P.S. Whole solution can be found &lt;a href=&quot;http://www.tapanila.net/wp-content/uploads/2013/08/tapanilatwitter.rar&quot;&gt;Here&lt;/a&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/creating-twitter-reader-using-windows-azure-mobile-services/&quot;&gt;Creating Twitter reader using Windows Azure Mobile Services&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;Tapanila.net&lt;/a&gt; on June 15, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[MVC 4 Scoped OAuth client for Facebook]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/mvc-4-scoped-oauth-client-for-facebook/" />
+  <id>http://localhost:4000/mvc-4-scoped-oauth-client-for-facebook</id>
+  <published>2013-06-02T15:58:00+02:00</published>
+  <updated>2013-06-02T15:58:00+02:00</updated>
+  <author>
+    <name></name>
+    <uri>http://localhost:4000</uri>
+    
+  </author>
+  <content type="html">&lt;p&gt;Sometimes you might need special permissions right from start on your web application. Default MVC 4 OAuth clients only ask basic permissions and you can’t change that behavior unless you create your own OAuth client. I did that for Facebook and later on will continue with other providers when needed&lt;/p&gt;
+
+&lt;!--more--&gt;
+&lt;p&gt;You can find the source code from &lt;a href=&quot;https://github.com/tapanila/MVCScopedClient&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Here’s the guide how to use it:&lt;/p&gt;
+&lt;ol&gt;
+	&lt;li&gt;Create new MVC 4 web application
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360574/CreateProjectMVC4_2_jvtvdf.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-3111&quot; alt=&quot;CreateProjectMVC4_2&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360574/CreateProjectMVC4_2_jvtvdf.png&quot; width=&quot;955&quot; height=&quot;660&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Open package manager console
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360572/PackageManagerConsole_mbgi9s.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-3121&quot; alt=&quot;Package Manager Console&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360572/PackageManagerConsole_mbgi9s.png&quot; width=&quot;684&quot; height=&quot;671&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Write &quot;Install-Package MVCScopedClient&quot;
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360571/Install-package-MVCScopedClient_wgaqkv.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-3131&quot; alt=&quot;Install-package MVCScopedClient&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360571/Install-package-MVCScopedClient_wgaqkv.png&quot; width=&quot;1222&quot; height=&quot;290&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Open authconfig.cs
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360569/AuthConfig_cs_1_lthocd.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-3151&quot; alt=&quot;AuthConfig.cs&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360569/AuthConfig_cs_1_lthocd.png&quot; width=&quot;1249&quot; height=&quot;517&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Write
+Using MVCScopedClients;&lt;/li&gt;
+	&lt;li&gt;Add this line to RegisterAuth() function
+OAuthWebSecurity.RegisterClient(new FacebookScopedClient(&quot;API-key&quot;, &quot;API-secret&quot;, &quot;PermissionScope&quot;), &quot;Facebook&quot;, new Dictionary&amp;lt;string, object&amp;gt;());
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360567/AuthConfig-Completed_v8bhc1.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-3161&quot; alt=&quot;AuthConfig Completed&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360567/AuthConfig-Completed_v8bhc1.png&quot; width=&quot;1142&quot; height=&quot;531&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Done&lt;/li&gt;
+&lt;/ol&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/mvc-4-scoped-oauth-client-for-facebook/&quot;&gt;MVC 4 Scoped OAuth client for Facebook&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;Tapanila.net&lt;/a&gt; on June 02, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[I just became Nokia Developer Champion]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/i-just-became-nokia-developer-champion/" />
+  <id>http://localhost:4000/i-just-became-nokia-developer-champion</id>
+  <published>2013-05-14T08:19:00+02:00</published>
+  <updated>2013-05-14T08:19:00+02:00</updated>
+  <author>
+    <name></name>
+    <uri>http://localhost:4000</uri>
+    
+  </author>
+  <content type="html">&lt;p&gt;I have been chosen as &lt;a href=&quot;https://www.developer.nokia.com/Community/Champions/&quot;&gt;Nokia Developer Champion&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;https://www.developer.nokia.com/pics/champ_main_new.png&quot; width=&quot;708&quot; height=&quot;144&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can read more about what the program is about from &lt;a href=&quot;https://www.developer.nokia.com/Community/Champions/&quot;&gt;Nokia Developer Page&lt;/a&gt; and &lt;a href=&quot;https://www.developer.nokia.com/Profile/?u=Tapanila&quot;&gt;link to my profile&lt;/a&gt;.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/i-just-became-nokia-developer-champion/&quot;&gt;I just became Nokia Developer Champion&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;Tapanila.net&lt;/a&gt; on May 14, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Github micro free for students]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/github-micro-free-for-students/" />
+  <id>http://localhost:4000/github-micro-free-for-students</id>
+  <published>2013-04-25T13:03:00+02:00</published>
+  <updated>2013-04-25T13:03:00+02:00</updated>
+  <author>
+    <name></name>
+    <uri>http://localhost:4000</uri>
+    
+  </author>
+  <content type="html">&lt;p&gt;Ever wanted to use private repository for GitHub? If you are a student you can get it for free at &lt;a href=&quot;https://github.com/edu&quot;&gt;https://github.com/edu
+&lt;!--more--&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360575/GitHubEdu_uer3lg.png&quot;&gt;&lt;img class=&quot;alignnone  wp-image-2951&quot; alt=&quot;GitHubEdu&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360575/GitHubEdu_uer3lg.png&quot; width=&quot;578&quot; height=&quot;254&quot; /&gt;&lt;/a&gt;
+After you have entered to the website you only need fill in quick form and then you will get answer back from GitHub. They are asking this information:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;School name&lt;/li&gt;
+	&lt;li&gt;Year in school&lt;/li&gt;
+	&lt;li&gt;How you are going to use GitHub?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Also to speed up the process it’s recommended that you add your school official email to your github account and verify it.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/github-micro-free-for-students/&quot;&gt;Github micro free for students&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;Tapanila.net&lt;/a&gt; on April 25, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Manage Windows Azure MySQL database]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/manage-windows-azure-mysql-database/" />
+  <id>http://localhost:4000/manage-windows-azure-mysql-database</id>
+  <published>2013-04-17T20:04:00+02:00</published>
+  <updated>2013-04-17T20:04:00+02:00</updated>
+  <author>
+    <name></name>
+    <uri>http://localhost:4000</uri>
+    
+  </author>
+  <content type="html">&lt;p&gt;Many people started using ClearDB MySQL database on Windows Azure before it was offered through Windows Azure Store which enables easy management of the service. You can still manage those but you need to do few steps before you are able to do that.&lt;!--more--&gt;&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;span style=&quot;line-height: 13px;&quot;&gt;Go to &lt;a href=&quot;https://manage.windowsazure.com/&quot;&gt;Windows Azure dashboard portal&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+	&lt;li&gt;Open your website
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360604/WebSite_mrdw9n.png&quot;&gt;&lt;img class=&quot;alignnone  wp-image-2851&quot; alt=&quot;WebSite&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360604/WebSite_mrdw9n.png&quot; width=&quot;694&quot; height=&quot;261&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Click &quot;View Connection Strings&quot; and take up Database, User Id and Password
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360603/ViewConnectionString_jp64mc.png&quot;&gt;&lt;img class=&quot;alignnone  wp-image-2861&quot; alt=&quot;ViewConnectionString&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360603/ViewConnectionString_jp64mc.png&quot; width=&quot;300&quot; height=&quot;261&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Go to &lt;a href=&quot;https://www.cleardb.com/store/azure/upgrade&quot;&gt;ClearDB upgrade website&lt;/a&gt; and fill in the details that you collected before
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360605/CleardDBUpgrade1_o62xot.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-2841&quot; alt=&quot;CleardDBUpgrade1&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360605/CleardDBUpgrade1_o62xot.png&quot; width=&quot;937&quot; height=&quot;649&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Now you can create your ClearDB account and have your MySQL database connected into it.&lt;/li&gt;
+&lt;/ul&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/manage-windows-azure-mysql-database/&quot;&gt;Manage Windows Azure MySQL database&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;Tapanila.net&lt;/a&gt; on April 17, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Generating JSON]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/generating-json/" />
+  <id>http://localhost:4000/generating-json</id>
+  <published>2013-02-15T09:00:00+01:00</published>
+  <updated>2013-02-15T09:00:00+01:00</updated>
+  <author>
+    <name></name>
+    <uri>http://localhost:4000</uri>
+    
+  </author>
+  <content type="html">&lt;p&gt;Generating JSON from your .net classes is very easy. Here’s simple sample how to do it.&lt;/p&gt;
+
+&lt;!--more--&gt;
+&lt;ol&gt;
+	&lt;li&gt;Create new web MVC 4 project
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360612/CreateProjectMVC4_rezdtw.png&quot;&gt;&lt;img class=&quot;alignnone  wp-image-2691&quot; alt=&quot;CreateProjectMVC4&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360612/CreateProjectMVC4_rezdtw.png&quot; width=&quot;669&quot; height=&quot;460&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Choose Internet Application
+&lt;a href=&quot;http://www.tapanila.net/wp-content/uploads/2013/02/InternetApplication.png&quot;&gt;&lt;img alt=&quot;InternetApplication&quot; src=&quot;http://www.tapanila.net/wp-content/uploads/2013/02/InternetApplication.png&quot; width=&quot;686&quot; height=&quot;621&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Create normal C# class
+&lt;a href=&quot;http://www.tapanila.net/wp-content/uploads/2013/02/SampleClass.png&quot;&gt;&lt;img alt=&quot;SampleClass&quot; src=&quot;http://www.tapanila.net/wp-content/uploads/2013/02/SampleClass.png&quot; width=&quot;682&quot; height=&quot;355&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Create new Action into HomeController
+&lt;a href=&quot;http://www.tapanila.net/wp-content/uploads/2013/02/ActionData.png&quot;&gt;&lt;img alt=&quot;ActionData&quot; src=&quot;http://www.tapanila.net/wp-content/uploads/2013/02/ActionData.png&quot; width=&quot;658&quot; height=&quot;347&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;See result
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360608/JsonSample_hpkbre.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-2721&quot; alt=&quot;JsonSample&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360608/JsonSample_hpkbre.png&quot; width=&quot;414&quot; height=&quot;239&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/generating-json/&quot;&gt;Generating JSON&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;Tapanila.net&lt;/a&gt; on February 15, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[TechDays Finland 2013]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/techdays-finland-2013/" />
+  <id>http://localhost:4000/techdays-finland-2013</id>
+  <published>2013-02-07T14:00:00+01:00</published>
+  <updated>2013-02-07T14:00:00+01:00</updated>
+  <author>
+    <name></name>
+    <uri>http://localhost:4000</uri>
+    
+  </author>
+  <content type="html">&lt;p&gt;I’ll be presenting at &lt;a href=&quot;http://www.techdays.fi/fi/keskiviikko-kehittajat&quot;&gt;TechDays Finland&lt;/a&gt; this year. TechDays is the biggest technology conference in Finland with over 1500 attendees and 5 different developer tracks(Windows 8, Windows Phone 8, Windows Azure, Tools and Experts track).&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;6.3.2013 13.00 - 14.00 : Connecting devices and services with Windows Azure. &lt;/strong&gt; &lt;a href=&quot;http://blogs.technet.com/b/ieitpro/archive/2006/09/29/459944.aspx&quot;&gt;Level 200&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The presentation will show you how to create backend service using Windows Azure Mobile Services very quickly. Then we will go further and start expanding it with other Azure services and 3rd party API’s to bring forth even more features.&lt;/p&gt;
+
+&lt;p&gt;I will also talk about how Windows Azure Mobile Services is built and how to use it with devices that don’t currently have ready made SDK available for them.&lt;/p&gt;
+
+&lt;p&gt;If you are frontend developer who would love to create a backend himself but doesn’t want to learn huge amount of stuff then this session is absolutely for you! If you are backend developer who wants to see new ways of creating it then this session shall provide some very interesting information.&lt;/p&gt;
+
+&lt;p&gt;All of my demos, source code and slides will be released here in my blog. The presentations will also be recorded and posted to the TechDays website. If there are any specific cases or questions you’d like me to answer in my presentations, feel free to ask me here or by simply pinging me at twitter!&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/techdays-finland-2013/&quot;&gt;TechDays Finland 2013&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;Tapanila.net&lt;/a&gt; on February 07, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Fetching Facebook Friends using Windows Azure Mobile Services]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/fetching-facebook-friends-using-windows-azure-mobile-services/" />
+  <id>http://localhost:4000/fetching-facebook-friends-using-windows-azure-mobile-services</id>
+  <published>2013-02-07T09:00:00+01:00</published>
+  <updated>2013-02-07T09:00:00+01:00</updated>
+  <author>
+    <name></name>
+    <uri>http://localhost:4000</uri>
+    
+  </author>
+  <content type="html">&lt;p&gt;This tutorial shows you how to fetch Facebook Friends if you have Facebook accessToken.&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;This sample expect you to have 2 tables ready “FacebookAcounts” and “Friends”. You can look from &lt;a title=&quot;Fetching Tweets using Windows Azure Mobile Services&quot; href=&quot;http://www.tapanila.net/fetching-tweets-using-windows-azure-mobile-services/&quot;&gt;previous post&lt;/a&gt; for tutorial about creating tables.&lt;/p&gt;
+
+&lt;p&gt;Here is the the code for Scheduled task called getFriends
+&lt;script src=&quot;https://gist.github.com/4699430.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/fetching-facebook-friends-using-windows-azure-mobile-services/&quot;&gt;Fetching Facebook Friends using Windows Azure Mobile Services&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;Tapanila.net&lt;/a&gt; on February 07, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Events]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/events/" />
+  <id>http://localhost:4000/events</id>
+  <published>2013-02-02T11:47:00+01:00</published>
+  <updated>2013-02-02T11:47:00+01:00</updated>
+  <author>
+    <name></name>
+    <uri>http://localhost:4000</uri>
+    
+  </author>
+  <content type="html">&lt;p&gt;I will gather here all of the events where I’m going to participate and where I have participated.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Coming:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Past:
+&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;May&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;31th, &lt;a href=&quot;http://www.appcampus.fi/appcademy/about-appcademy&quot;&gt;AppCademy&lt;/a&gt;: Windows Azure overview &amp;amp; Windows Azure Mobile Services&lt;/li&gt;
+	&lt;li&gt;&lt;span style=&quot;line-height: 13px;&quot;&gt;20th-23th at Tanzania, &lt;a href=&quot;http://tanzict.or.tz/2013/05/15/international-co-innovation-week-program/&quot;&gt;International Co-innovation Week&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;April&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;27th, &lt;a href=&quot;http://finlandazure.eventbrite.com/&quot;&gt;Global Windows Azure Bootcamp Finland&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;19th-21th, &lt;a href=&quot;http://spaceship.fi/&quot;&gt;Spaceship&lt;/a&gt; hackathon&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;March&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;10th, Windows Phone Hackathon&lt;/li&gt;
+	&lt;li&gt;9th, &lt;a href=&quot;http://mobiledevcamp.fi/&quot;&gt;Mobile Dev Camp&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;7th, &lt;a href=&quot;http://aani.nokia.fi/2013/01/31/lumiaappday/&quot;&gt;Lumia AppDay&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;5th - 6th, &lt;a href=&quot;http://www.techdays.fi/fi/etusivu&quot;&gt;TechDays 2013 Helsinki&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;February&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;20th - 22th at India, &lt;a href=&quot;http://mobilityresearchforum.com/mobinikka.html&quot;&gt;Mobinikka&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;18th - 19th at India, &lt;a href=&quot;http://mobilityresearchforum.com/register/&quot;&gt;Nokia Confluence&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;
+&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Christmas&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;18th - 19th, &lt;a href=&quot;http://www.microsoft.com/finland/hackathon/&quot;&gt;X-mas Hackathon&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;November&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;8th, &lt;a href=&quot;http://www.microsoft.com/finland/wowzapp/&quot;&gt;WOWZAPP  Windows Seminar&lt;/a&gt; (&lt;a href=&quot;http://www.youtube.com/watch?v=OGlcMDSAVrA&quot;&gt;My presentation&lt;/a&gt;)&lt;/li&gt;
+	&lt;li&gt;9th, &lt;a href=&quot;http://www.microsoft.com/finland/wowzapp/&quot;&gt;WOWZAPP App Workshop&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;9th - 10th, &lt;a href=&quot;http://www.microsoft.com/finland/wowzapp/&quot;&gt;WOWZAPP Hackathon&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;22th, Metropolia University Windows Phone Course : Windows Azure Backend&lt;/li&gt;
+	&lt;li&gt;24th, &lt;a href=&quot;http://www.meetup.com/Tampere-Windows-Phone-Developer-Meetup/events/75825682/&quot;&gt;Tampere Windows and Windows Phone Developer Group: Introductory meetup&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;
+&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;September&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;27th - 29th at Sweden, &lt;a href=&quot;http://www.azureug.se/CloudBurst2012/&quot;&gt;Cloud Burst 2012&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;19th, &lt;a href=&quot;http://apptalk-tre.eventbrite.com/&quot;&gt;AppTalk Tampere&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/events/&quot;&gt;Events&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;Tapanila.net&lt;/a&gt; on February 02, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Windows Azure Active Directory Access Control with Visual Studio 2012]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/windows-azure-active-directory-access-control-with-visual-studio-2012/" />
+  <id>http://localhost:4000/windows-azure-active-directory-access-control-with-visual-studio-2012</id>
+  <published>2013-01-30T13:47:00+01:00</published>
+  <updated>2013-01-30T13:47:00+01:00</updated>
+  <author>
+    <name></name>
+    <uri>http://localhost:4000</uri>
+    
+  </author>
+  <content type="html">&lt;p&gt;This guide shows you how to use Windows Azure Active Directory Access Control (also known as Access Control Service or ACS)&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Requirements:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;Visual Studio 2012&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://visualstudiogallery.msdn.microsoft.com/e21bf653-dfe1-4d81-b3d3-795cb104066e&quot;&gt;Identity and Access tool&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;An active &lt;a title=&quot;Free Trial&quot; href=&quot;http://www.windowsazure.com/en-us/pricing/free-trial/&quot;&gt;Windows Azure account&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Lets start by configuring the Windows Azure part first.&lt;/p&gt;
+&lt;ol&gt;
+	&lt;li&gt;Open &lt;a href=&quot;https://manage.windowsazure.com&quot;&gt;dashboard&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Click Active Directory
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360657/ActiveDirectory_bzidyg.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-1701&quot; alt=&quot;ActiveDirectory&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360657/ActiveDirectory_bzidyg.png&quot; width=&quot;181&quot; height=&quot;553&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Click New from left bottom and fill in the name and choose region
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360655/CreateActiveDirectory_yuiuti.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-1711&quot; alt=&quot;CreateActiveDirectory&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360655/CreateActiveDirectory_yuiuti.png&quot; width=&quot;1140&quot; height=&quot;490&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Choose your subscription and click Manage from bottom&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360654/ManageActiveDirectory2_vozld8.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-1741&quot; alt=&quot;ManageActiveDirectory2&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360654/ManageActiveDirectory2_vozld8.png&quot; width=&quot;903&quot; height=&quot;113&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Take up your Service Namespace. In my case &quot;tapanilablog&quot;
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360651/AccessControlService1_yi9fyf.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-1761&quot; alt=&quot;AccessControlService&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360651/AccessControlService1_yi9fyf.png&quot; width=&quot;1042&quot; height=&quot;590&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Click Management Service from left and then ManagementClient
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360650/AccessControlServiceManagementService_pinknc.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-1771&quot; alt=&quot;AccessControlServiceManagementService&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360650/AccessControlServiceManagementService_pinknc.png&quot; width=&quot;1024&quot; height=&quot;495&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Click Password
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360649/AccessControlServiceManagementServicePassword_pgjkuq.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-1781&quot; alt=&quot;AccessControlServiceManagementServicePassword&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360649/AccessControlServiceManagementServicePassword_pgjkuq.png&quot; width=&quot;1025&quot; height=&quot;511&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Click Show Password and take up your Password there&#39;s needed later
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360647/AccessControlServiceManagementServicePasswordButton_howzgq.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-1791&quot; alt=&quot;AccessControlServiceManagementServicePasswordButton&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360647/AccessControlServiceManagementServicePasswordButton_howzgq.png&quot; width=&quot;1032&quot; height=&quot;601&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Close your ACS management page and go back to dashboard&lt;/li&gt;
+	&lt;li&gt;Click Web sites
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360646/WebSites_to3wps.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-1801&quot; alt=&quot;WebSites&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360646/WebSites_to3wps.png&quot; width=&quot;188&quot; height=&quot;471&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Create new web site
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360645/CreateWebSite_hgxysg.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-1811&quot; alt=&quot;CreateWebSite&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360645/CreateWebSite_hgxysg.png&quot; width=&quot;1145&quot; height=&quot;485&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Download the publish profile and take up the url
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360644/WebSiteDetails_vgrdxn.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-1821&quot; alt=&quot;WebSiteDetails&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360644/WebSiteDetails_vgrdxn.png&quot; width=&quot;248&quot; height=&quot;315&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now the Visual studio part&lt;/p&gt;
+&lt;ol&gt;
+	&lt;li&gt;Create new web project. Check that you are targeting .net 4.5
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360643/CreatingEmptyWebProject_o9a7ky.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-1831&quot; alt=&quot;CreatingEmptyWebProject&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360643/CreatingEmptyWebProject_o9a7ky.png&quot; width=&quot;954&quot; height=&quot;582&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Right click your project and choose Identity and Access
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360641/IdentityAndAccess_f5xudj.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-1841&quot; alt=&quot;IdentityAndAccess&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360641/IdentityAndAccess_f5xudj.png&quot; width=&quot;647&quot; height=&quot;537&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Select &quot;Use the Windows Azure Access Control Service&quot;
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360623/IdentityAndAccessSettings_pufhes.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-1881&quot; alt=&quot;IdentityAndAccessSettings&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360623/IdentityAndAccessSettings_pufhes.png&quot; width=&quot;729&quot; height=&quot;208&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Click Change from below
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360626/IdentityAndAccessChange_kffyqm.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-1851&quot; alt=&quot;IdentityAndAccessChange&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360626/IdentityAndAccessChange_kffyqm.png&quot; width=&quot;720&quot; height=&quot;293&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Enter your ACS namespace and management key that we got before
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360625/IdentityAndAccessConfigure_igfoct.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-1861&quot; alt=&quot;IdentityAndAccessConfigure&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360625/IdentityAndAccessConfigure_igfoct.png&quot; width=&quot;481&quot; height=&quot;317&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Choose which providers you want to use with your application and Enter your realms and click okay
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360624/IdentityAndAccessProvideAndRealms_xdbxzn.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-1871&quot; alt=&quot;IdentityAndAccessProvideAndRealms&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360624/IdentityAndAccessProvideAndRealms_xdbxzn.png&quot; width=&quot;732&quot; height=&quot;363&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Right click project and click Publish
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360621/PublishingProject_shn3aa.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-1901&quot; alt=&quot;PublishingProject&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360621/PublishingProject_shn3aa.png&quot; width=&quot;657&quot; height=&quot;400&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Import your publishing profile
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360622/PublishingImport_fzwzmb.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-1891&quot; alt=&quot;PublishingImport&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360622/PublishingImport_fzwzmb.png&quot; width=&quot;584&quot; height=&quot;296&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Click Publish
+&lt;a href=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360620/PublishPublish_lsnbxq.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-1911&quot; alt=&quot;PublishPublish&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360620/PublishPublish_lsnbxq.png&quot; width=&quot;683&quot; height=&quot;501&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Now it should open your website and automatically redirect you into Live login because that&#39;s the only method. After your login is completed it will show you &quot;Server Error in &#39;/&#39; Application. Because we used empty project&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Update 29.7.2013:
+If you have Runtime/Server issues when you have deployed this to Azure follow this &lt;a href=&quot;http://denepalmer.azurewebsites.net/index.php/how-to-fix-runtimeserver-error-redirect-issues-when-adding-azure-acs-authentication-to-an-asp-net-project/&quot;&gt;guide&lt;/a&gt;.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/windows-azure-active-directory-access-control-with-visual-studio-2012/&quot;&gt;Windows Azure Active Directory Access Control with Visual Studio 2012&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;Tapanila.net&lt;/a&gt; on January 30, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Fetching Tweets by multiple hashtags using Windows Azure Mobile Services]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/fetching-tweets-by-multiple-hashtags-using-windows-azure-mobile-services/" />
+  <id>http://localhost:4000/fetching-tweets-by-multiple-hashtags-using-windows-azure-mobile-services</id>
+  <published>2013-01-23T08:00:00+01:00</published>
+  <updated>2013-01-23T08:00:00+01:00</updated>
+  <author>
+    <name></name>
+    <uri>http://localhost:4000</uri>
+    
+  </author>
+  <content type="html">&lt;p&gt;&lt;a title=&quot;Fetching Tweets using Windows Azure Mobile Services&quot; href=&quot;http://www.tapanila.net/fetching-tweets-using-windows-azure-mobile-services/&quot;&gt;In my previous post&lt;/a&gt; I went through the whole process how to create new Windows Azure Mobile Services project and adding the scheduler for fetching tweets based on single tweet.&lt;!--more--&gt; Here’s same sample except now it enables you to add the wanted hashtags to table and then fetch all of them.&lt;/p&gt;
+
+&lt;p&gt;You only need to create one new table called hashtags and copy paste the javascript to getTweets scheduler.
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://gist.github.com/4594903.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/fetching-tweets-by-multiple-hashtags-using-windows-azure-mobile-services/&quot;&gt;Fetching Tweets by multiple hashtags using Windows Azure Mobile Services&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;Tapanila.net&lt;/a&gt; on January 23, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Fetching Tweets using Windows Azure Mobile Services]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/fetching-tweets-using-windows-azure-mobile-services/" />
+  <id>http://localhost:4000/fetching-tweets-using-windows-azure-mobile-services</id>
+  <published>2013-01-17T13:12:00+01:00</published>
+  <updated>2013-01-17T13:12:00+01:00</updated>
+  <author>
+    <name></name>
+    <uri>http://localhost:4000</uri>
+    
+  </author>
+  <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.windowsazure.com/en-us/develop/mobile/&quot;&gt;Windows Azure Mobile Services&lt;/a&gt; is one the newest things that have been added to Windows Azure. It’s goal is to enable front-end developers easily to create a backend. It seriously is easy and require just few click and you are done with creating backend. This tutorial will focus on how to use Scheduler of Mobile Services to fetch data from twitter and then store it into Mobile Services.
+&lt;!--more--&gt;&lt;/p&gt;
+&lt;ol&gt;
+	&lt;li&gt;Log into the &lt;a href=&quot;https://manage.windowsazure.com/&quot;&gt;Management Portal&lt;/a&gt;.&lt;/li&gt;
+	&lt;li&gt;At the bottom left of page click NEW.
+&lt;img class=&quot;alignnone size-full wp-image-1431&quot; alt=&quot;New&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360699/New_bnsjkq.png&quot; width=&quot;123&quot; height=&quot;60&quot; /&gt;&lt;/li&gt;
+	&lt;li&gt;Choose Computing -&amp;gt; Mobile Service -&amp;gt; Create
+&lt;img class=&quot;alignnone size-full wp-image-1441&quot; alt=&quot;CreateMobileServiceFromPanel&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360698/CreateMobileServiceFromPanel_uctr0g.png&quot; width=&quot;1111&quot; height=&quot;300&quot; /&gt;&lt;/li&gt;
+	&lt;li&gt;This dialog will popup
+&lt;img class=&quot;alignnone size-full wp-image-1451&quot; alt=&quot;CreateMobileServiceDialogOne&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360696/CreateMobileServiceDialogOne_coprdj.png&quot; width=&quot;680&quot; height=&quot;446&quot; /&gt;&lt;/li&gt;
+	&lt;li&gt;Next step will look like this if you chose to create new SQL database instance
+&lt;img class=&quot;alignnone size-full wp-image-1461&quot; alt=&quot;CreateMobileServiceDialogTwo&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360695/CreateMobileServiceDialogTwo_bwknpi.png&quot; width=&quot;677&quot; height=&quot;450&quot; /&gt;&lt;/li&gt;
+	&lt;li&gt;After that step your backend is getting provisioned and will be functional in few minutes&lt;/li&gt;
+	&lt;li&gt;Lets start by viewing the menu of your new service
+&lt;img class=&quot;alignnone size-full wp-image-1471&quot; alt=&quot;MobilSeriveMenu&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360694/MobilSeriveMenu_sosngw.png&quot; width=&quot;924&quot; height=&quot;222&quot; /&gt;&lt;/li&gt;
+	&lt;li&gt;Navigate to DATA section
+&lt;img class=&quot;alignnone size-full wp-image-1481&quot; alt=&quot;MobileServiceDataEmpty&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360693/MobileServiceDataEmpty_dscfor.png&quot; width=&quot;725&quot; height=&quot;123&quot; /&gt;&lt;/li&gt;
+	&lt;li&gt;Choose add a table and give it a name &quot;Tweets&quot;
+&lt;img class=&quot;alignnone size-full wp-image-1491&quot; alt=&quot;MobileServiceCreateTable&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360692/MobileServiceCreateTable_oakikh.png&quot; width=&quot;645&quot; height=&quot;559&quot; /&gt;&lt;/li&gt;
+	&lt;li&gt;Navigate to SCHEDULER
+&lt;img class=&quot;alignnone size-full wp-image-1501&quot; alt=&quot;MobileServiceSchedulerEmpty&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360665/MobileServiceSchedulerEmpty_yu6b1j.png&quot; width=&quot;616&quot; height=&quot;135&quot; /&gt;&lt;/li&gt;
+	&lt;li&gt;Choose create a scheduled job and give it a name &quot;getTweets&quot;
+&lt;img class=&quot;alignnone size-full wp-image-1511&quot; alt=&quot;MobileServiceCreateScheduledJob&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360663/MobileServiceCreateScheduledJob_w4jwtl.png&quot; width=&quot;621&quot; height=&quot;453&quot; /&gt;&lt;/li&gt;
+	&lt;li&gt;Open the job by clicking the name
+&lt;img class=&quot;alignnone size-full wp-image-1521&quot; alt=&quot;MobileServiceScheduledJob&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360662/MobileServiceScheduledJob_lcpuwz.png&quot; width=&quot;900&quot; height=&quot;37&quot; /&gt;&lt;/li&gt;
+	&lt;li&gt;Open Script
+&lt;img class=&quot;alignnone size-full wp-image-1531&quot; alt=&quot;MobileServiceSchedulerScript&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360661/MobileServiceSchedulerScript_dbqyrd.png&quot; width=&quot;1089&quot; height=&quot;359&quot; /&gt;&lt;/li&gt;
+	&lt;li&gt;Copy paste the code from below and choose save from bottom
+&lt;img class=&quot;alignnone size-full wp-image-1541&quot; alt=&quot;MobileServiceSchedulerScriptSave&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360660/MobileServiceSchedulerScriptSave_xgjhf9.png&quot; width=&quot;890&quot; height=&quot;228&quot; /&gt;&lt;/li&gt;
+	&lt;li&gt;Click run once from bottom
+&lt;img class=&quot;alignnone size-full wp-image-1551&quot; alt=&quot;MobileServiceSchedulerScriptRunOnce&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360659/MobileServiceSchedulerScriptRunOnce_iv5yt5.png&quot; width=&quot;589&quot; height=&quot;202&quot; /&gt;&lt;/li&gt;
+	&lt;li&gt;Go back to DATA and see the tweets containing #WindowsAzure in the table
+&lt;img class=&quot;alignnone size-full wp-image-1561&quot; alt=&quot;MobileServiceDataTweets&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360658/MobileServiceDataTweets_ivaose.png&quot; width=&quot;1076&quot; height=&quot;367&quot; /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;script src=&quot;https://gist.github.com/tapanila/4594903.js&quot;&gt;&lt;/script&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/fetching-tweets-using-windows-azure-mobile-services/&quot;&gt;Fetching Tweets using Windows Azure Mobile Services&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;Tapanila.net&lt;/a&gt; on January 17, 2013.&lt;/p&gt;</content>
+</entry>
+
+</feed>

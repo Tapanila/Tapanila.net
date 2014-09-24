@@ -1,0 +1,264 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Consuming WCF service with Windows 8 &#8211; Tapanila.net</title>
+<meta name="description" content="The reason why I have been writing so much about creating WCF services is that they are very easy to consume and use on Windows 8 application.
+So I will show you how to create Windows 8 application that uses the WCF service that was created here.
+
+">
+<meta name="keywords" content="">
+
+  
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Consuming WCF service with Windows 8">
+<meta name="twitter:description" content="The reason why I have been writing so much about creating WCF services is that they are very easy to consume and use on Windows 8 application.
+So I will show you how to create Windows 8 application that uses the WCF service that was created here.
+
+">
+<meta name="twitter:site" content="@TapanilaT">
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://localhost:4000/images/default-thumb.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Consuming WCF service with Windows 8">
+<meta property="og:description" content="The reason why I have been writing so much about creating WCF services is that they are very easy to consume and use on Windows 8 application.
+So I will show you how to create Windows 8 application that uses the WCF service that was created here.
+
+">
+<meta property="og:url" content="http://localhost:4000/consuming-wcf-service-with-windows-8/">
+<meta property="og:site_name" content="Tapanila.net">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/consuming-wcf-service-with-windows-8/">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Tapanila.net Feed">
+<link rel="author" href="http://plus.google.com/+TeemuTapanila?rel=author">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+	<script src="http://localhost:4000/assets/js/vendor/html5shiv.min.js"></script>
+	<script src="http://localhost:4000/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://localhost:4000/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body class="post">
+
+<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+
+<div class="navigation-wrapper">
+	<div class="site-name">
+		<a href="http://localhost:4000">Tapanila.net</a>
+	</div><!-- /.site-name -->
+	<div class="top-navigation">
+		<nav role="navigation" id="site-nav" class="nav">
+		    <ul>
+		        
+					    
+					        
+					    
+					    <li><a href="http://localhost:4000/posts/" >Posts</a></li>
+					  
+		    </ul>
+		</nav>
+	</div><!-- /.top-navigation -->
+</div><!-- /.navigation-wrapper -->
+
+
+
+<div id="main" role="main">
+  <div class="article-author-side">
+    
+  
+
+
+
+	<img src="https://res.cloudinary.com/tapanila-net/image/upload/c_scale,h_186,q_80/v1411477391/Teemu%20Tapanila.jpg" class="bio-photo" alt="Teemu Tapanila bio photo"></a>
+
+<h3>Teemu Tapanila</h3>
+<p>Microsoft Azure MVP and Windows Phone developer</p>
+<a href="mailto:teemu@tapanila.net" class="author-social" target="_blank"><i class="fa fa-envelope-square"></i> Email</a>
+<a href="http://twitter.com/TapanilaT" class="author-social" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>
+<a href="http://facebook.com/Teemu.Tapanila" class="author-social" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a>
+<a href="http://plus.google.com/+TeemuTapanila" class="author-social" target="_blank"><i class="fa fa-google-plus-square"></i> Google+</a>
+<a href="http://linkedin.com/in/teemutapanila" class="author-social" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+
+
+<a href="http://github.com/Tapanila" class="author-social" target="_blank"><i class="fa fa-github"></i> Github</a>
+<a href="http://stackoverflow.com/users/https://stackoverflow.com/users/797074/teemu-tapanila" class="author-social" target="_blank"><i class="fa fa-stack-overflow"></i> Stackoverflow</a>
+
+
+
+
+
+  </div>
+  <article>
+    <div class="headline-wrap">
+      
+        <h1><a href="http://localhost:4000/consuming-wcf-service-with-windows-8/" rel="bookmark" title="Consuming WCF service with Windows 8">Consuming WCF service with Windows 8</a></h1>
+      
+    </div><!--/ .headline-wrap -->
+    <div class="article-wrap">
+      <p>The reason why I have been writing so much about creating WCF services is that they are very easy to consume and use on Windows 8 application.
+So I will show you how to create Windows 8 application that uses the WCF service that was created <a title="Publishing WCF service that uses Blob Storage into Windows Azure Websites" href="http://tapanila.net/publishing-wcf-service-that-uses-blob-storage-into-windows-azure-websites/">here</a>.</p>
+
+<!--more-->
+<ol>
+	<li>Create new Windows Metro style Blank App
+<a href="http://tapanila.azurewebsites.net/wp-content/uploads/2012/08/CreatingBlankMetroProjectWCF.png"><img class="alignnone size-medium wp-image-244" title="CreatingBlankMetroProjectWCF" src="https://res.cloudinary.com/tapanila-net/image/upload/h_207,w_300/v1388360713/CreatingBlankMetroProjectWCF_pfdspr.png" alt="" width="300" height="207" /></a></li>
+	<li>Right click project and choose Add Service Reference...
+<a href="http://tapanila.azurewebsites.net/wp-content/uploads/2012/08/AddServiceReference.png"><img class="alignnone size-medium wp-image-245" title="AddServiceReference" src="https://res.cloudinary.com/tapanila-net/image/upload/h_300,w_175/v1388360712/AddServiceReference_dtq5ka.png" alt="" width="175" height="300" /></a></li>
+	<li>On Address textbox put your WCF service url.
+I used <a href="http://tapanilablog.azurewebsites.net/Service1.svc">http://tapanilablog.azurewebsites.net/Service1.svc</a> and click Go and then OK
+<a href="http://tapanila.azurewebsites.net/wp-content/uploads/2012/08/AddServiceReferenceSearched.png"><img class="alignnone size-medium wp-image-246" title="AddServiceReferenceSearched" src="https://res.cloudinary.com/tapanila-net/image/upload/h_243,w_300/v1388360711/AddServiceReferenceSearched_lqs3r6.png" alt="" width="300" height="243" /></a></li>
+	<li>Edit MainPage.xaml.cs</li>
+<script src="https://gist.github.com/3292930.js"> </script>
+	<li>Done!</li>
+</ol>
+
+      <hr />
+      <footer role="contentinfo">
+        <div class="article-author-bottom">
+          
+  
+
+
+
+	<img src="https://res.cloudinary.com/tapanila-net/image/upload/c_scale,h_186,q_80/v1411477391/Teemu%20Tapanila.jpg" class="bio-photo" alt="Teemu Tapanila bio photo"></a>
+
+<h3>Teemu Tapanila</h3>
+<p>Microsoft Azure MVP and Windows Phone developer</p>
+<a href="mailto:teemu@tapanila.net" class="author-social" target="_blank"><i class="fa fa-envelope-square"></i> Email</a>
+<a href="http://twitter.com/TapanilaT" class="author-social" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>
+<a href="http://facebook.com/Teemu.Tapanila" class="author-social" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a>
+<a href="http://plus.google.com/+TeemuTapanila" class="author-social" target="_blank"><i class="fa fa-google-plus-square"></i> Google+</a>
+<a href="http://linkedin.com/in/teemutapanila" class="author-social" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+
+
+<a href="http://github.com/Tapanila" class="author-social" target="_blank"><i class="fa fa-github"></i> Github</a>
+<a href="http://stackoverflow.com/users/https://stackoverflow.com/users/797074/teemu-tapanila" class="author-social" target="_blank"><i class="fa fa-stack-overflow"></i> Stackoverflow</a>
+
+
+
+
+
+        </div>
+        <p class="byline"><strong>Consuming WCF service with Windows 8</strong> was published on <time datetime="2012-08-08T10:00:00+02:00">August 08, 2012</time>.</p>
+      </footer>
+    </div><!-- /.article-wrap -->
+  
+    <section id="disqus_thread"></section><!-- /#disqus_thread -->
+  
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrap">
+  <div class="related-articles">
+  <h4>You might also enjoy <small class="pull-right">(<a href="http://localhost:4000/posts/">View all posts</a>)</small></h4>
+    <ul>
+    
+      <li><a href="http://localhost:4000/windows-phone-8-with-caliburn-micro-data-binding/" title="Windows Phone 8 with Caliburn Micro Data Binding">Windows Phone 8 with Caliburn Micro Data Binding</a></li>
+    
+      <li><a href="http://localhost:4000/windows-phone-8-with-caliburn-micro/" title="Windows Phone 8 with Caliburn Micro">Windows Phone 8 with Caliburn Micro</a></li>
+    
+      <li><a href="http://localhost:4000/facebook-single-sign-on-on-windows-phone-8-with-windows-azure-mobile-services/" title="Facebook Single sign-on on Windows Phone 8 with Windows Azure Mobile Services">Facebook Single sign-on on Windows Phone 8 with Windows Azure Mobile Services</a></li>
+    
+    </ul>
+    <hr />
+  </div><!-- /.related-articles -->
+  <footer>
+    
+
+<span>&copy; 2014 Teemu Tapanila. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/">Minimal Mistakes</a> theme.</span>
+
+  </footer>
+</div><!-- /.footer-wrap -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  var _gaq = _gaq || [];
+  var pluginUrl = 
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-30022509-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+  
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'tapanilanetblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+	        
+
+</body>
+</html>
