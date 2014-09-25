@@ -147,44 +147,96 @@ Also you can access all of the Azure resources from there too.
 You just need to add reference to Azure manually because by default the WCF application is not an Azure project.</p>
 
 <!--more-->
+
 <ol>
-	<li><a href="https://www.windowsazure.com/en-us/develop/net/">Download</a> and install Azure SDK</li>
-	<li>Login to <a href="https://manage.windowsazure.com">Azure Dashboard</a></li>
-	<li>Choose storage from left
-<a href="http://tapanila.azurewebsites.net/wp-content/uploads/2012/08/Storage.png"><img class="alignnone size-medium wp-image-196" title="Storage" src="https://res.cloudinary.com/tapanila-net/image/upload/h_300,w_190/v1388360783/Storage_fhlxrd.png" alt="" width="190" height="300" /></a></li>
-	<li> Click new from bottom left, choose Storage, Quick Create, type in your url and click Create Storage Account
-<a href="http://tapanila.azurewebsites.net/wp-content/uploads/2012/08/CreateNewStorage.png"><img class="alignnone size-medium wp-image-197" title="CreateNewStorage" src="https://res.cloudinary.com/tapanila-net/image/upload/h_164,w_300/v1388360782/CreateNewStorage_ofixqj.png" alt="" width="300" height="164" /></a></li>
-	<li>Open newly created Storage Account and choose Manage Keys from bottom
-<a href="http://tapanila.azurewebsites.net/wp-content/uploads/2012/08/ManageKeys.png"><img class="alignnone size-medium wp-image-199" title="ManageKeys" src="https://res.cloudinary.com/tapanila-net/image/upload/h_29,w_300/v1388360781/ManageKeys_jnxpin.png" alt="" width="300" height="29" /></a></li>
-	<li> Copy Primary Access Key and close window. We are going to use that key later
-<a href="http://tapanila.azurewebsites.net/wp-content/uploads/2012/08/PrimaryAcccessKey.png"><img class="alignnone size-medium wp-image-200" title="PrimaryAcccessKey" src="https://res.cloudinary.com/tapanila-net/image/upload/h_255,w_300/v1388360780/PrimaryAcccessKey_t3xcfk.png" alt="" width="300" height="255" /></a></li>
-	<li>Choose websites from left
-<a href="http://tapanila.net/wp-content/uploads/2012/07/AzureWebsites1.png"><img title="AzureWebsites" src="http://tapanila.net/wp-content/uploads/2012/07/AzureWebsites1.png" alt="" width="198" height="226" /></a></li>
-	<li>Click new from bottom left, choose Quick Create, type in your url and click Create Web Site
-<a href="http://tapanila.net/wp-content/uploads/2012/07/AzureWebsitesQuickCreate1.png"><img title="AzureWebsitesQuickCreate" src="http://tapanila.net/wp-content/uploads/2012/07/AzureWebsitesQuickCreate1-300x162.png" alt="" width="300" height="162" /></a></li>
-	<li>After that your website is up and running</li>
-	<li>Now open your website settings from Azure Dashboard by clicking the name of it
-<a href="http://tapanila.net/wp-content/uploads/2012/07/ChoosingWebsite.png"><img title="ChoosingWebsite" src="http://tapanila.net/wp-content/uploads/2012/07/ChoosingWebsite-300x10.png" alt="" width="300" height="10" /></a></li>
-	<li> You can use either TFS, Github, FTP or Visual Studio to deploy the website. I chose VS
-<a href="http://tapanila.net/wp-content/uploads/2012/07/DowndloadPublishProfile.png"><img title="DowndloadPublishProfile" src="http://tapanila.net/wp-content/uploads/2012/07/DowndloadPublishProfile-217x300.png" alt="" width="217" height="300" /></a></li>
-	<li> Now create your new WCF Application project on Visual Studio. Remember tho choose .NET Framework 4
-<a href="http://tapanila.azurewebsites.net/wp-content/uploads/2012/07/CreateNewWCFServiceProject1.png"><img class="alignnone size-medium wp-image-98" title="CreateNewWCFServiceProject" src="https://res.cloudinary.com/tapanila-net/image/upload/h_207,w_300/v1388360870/CreateNewWCFServiceProject1_ifqzip.png" alt="" width="300" height="207" /></a></li>
-	<li>Right click your project and choose add reference
-<a href="http://tapanila.azurewebsites.net/wp-content/uploads/2012/08/AddReference.png"><img class="alignnone size-medium wp-image-202" title="AddReference" src="https://res.cloudinary.com/tapanila-net/image/upload/h_300,w_169/v1388360716/AddReference_r1wvzq.png" alt="" width="169" height="300" /></a></li>
-	<li>Search for Azure and check Azure.StorageClient and click okay
-<a href="http://tapanila.azurewebsites.net/wp-content/uploads/2012/08/ManageReferencesAzureStorage.png"><img class="alignnone size-medium wp-image-203" title="ManageReferencesAzureStorage" src="https://res.cloudinary.com/tapanila-net/image/upload/h_225,w_300/v1388360715/ManageReferencesAzureStorage_eyysez.png" alt="" width="300" height="225" /></a></li>
-	<li>Edit IService1.cs</li>
-<p><script src="https://gist.github.com/3270985.js"> </script></p>
-        <li>Edit Service1.svc</li>
-<p><script src="https://gist.github.com/3271026.js"> </script></p>
-	<li>Right click your project and choose publish
-<a href="http://tapanila.net/wp-content/uploads/2012/07/PublishingWCFService.png"><img class="alignnone size-medium wp-image-99" title="PublishingWCFService" src="https://res.cloudinary.com/tapanila-net/image/upload/h_300,w_225/v1388360869/PublishingWCFService_tqlvsn.png" alt="" width="225" height="300" /></a></li>
-	<li> Choose import and then browse to the file you downloaded from Azure Dashboard
-<a href="http://tapanila.net/wp-content/uploads/2012/07/ImportPublishProfile.png"><img title="ImportPublishProfile" src="http://tapanila.net/wp-content/uploads/2012/07/ImportPublishProfile-300x233.png" alt="" width="300" height="233" /></a></li>
-	<li>Now just click publish
-<a href="http://tapanila.net/wp-content/uploads/2012/07/PublishWebApplication.png"><img title="PublishWebApplication" src="http://tapanila.net/wp-content/uploads/2012/07/PublishWebApplication-300x232.png" alt="" width="300" height="232" /></a></li>
-	<li>Enjoy of your new service
-<a href="http://tapanila.net/wp-content/uploads/2012/07/PublishedWCFService.png"><img title="PublishedWCFService" src="http://tapanila.net/wp-content/uploads/2012/07/PublishedWCFService-300x187.png" alt="" width="300" height="187" /></a></li>
+  <li><a href="https://www.windowsazure.com/en-us/develop/net/">Download</a> and install Azure SDK</li>
+  <li>Login to <a href="https://manage.windowsazure.com">Azure Dashboard</a></li>
+  <li>
+    <p>Choose storage from left</p>
+
+    <p><img src="https://res.cloudinary.com/tapanila-net/image/upload/h_300,w_190/v1388360783/Storage_fhlxrd.png" alt="Storage" /></p>
+  </li>
+  <li>
+    <p>Click new from bottom left, choose Storage, Quick Create, type in your url and click Create Storage Account</p>
+
+    <p><img src="https://res.cloudinary.com/tapanila-net/image/upload/h_164,w_300/v1388360782/CreateNewStorage_ofixqj.png" alt="Create new storage" /></p>
+  </li>
+  <li>
+    <p>Open newly created Storage Account and choose Manage Keys from bottom</p>
+
+    <p><img src="https://res.cloudinary.com/tapanila-net/image/upload/h_29,w_300/v1388360781/ManageKeys_jnxpin.png" alt="Manage Keys" /></p>
+  </li>
+  <li>
+    <p>Copy Primary Access Key and close window. We are going to use that key later</p>
+
+    <p><img src="https://res.cloudinary.com/tapanila-net/image/upload/h_255,w_300/v1388360780/PrimaryAcccessKey_t3xcfk.png" alt="Primary Access Key" /></p>
+  </li>
+  <li>
+    <p>Choose websites from left</p>
+
+    <p><img src="https://res.cloudinary.com/tapanila-net/image/upload/c_scale,h_300/v1388361009/AzureWebsites1_lsi2oi.png" alt="Azure Websites" /></p>
+  </li>
+  <li>
+    <p>Click new from bottom left, choose Quick Create, type in your url and click Create Web Site</p>
+
+    <p><img src="http://res.cloudinary.com/tapanila-net/image/upload/c_scale,w_300/v1388361006/AzureWebsitesQuickCreate1_mlenio.png" alt="Quick create azure website" /></p>
+  </li>
+  <li>After that your website is up and running</li>
+  <li>
+    <p>Now open your website settings from Azure Dashboard by clicking the name of it</p>
+
+    <p><img src="http://res.cloudinary.com/tapanila-net/image/upload/c_scale,w_300/v1388361005/ChoosingWebsite_fmbrf0.png" alt="Choosing website" /></p>
+  </li>
+  <li>
+    <p>You can use either TFS, Github, FTP or Visual Studio to deploy the website. I chose VS</p>
+
+    <p><img src="http://res.cloudinary.com/tapanila-net/image/upload/c_scale,w_300/v1388361003/DowndloadPublishProfile_xfbdge.png" alt="Download publish profile" /></p>
+  </li>
+  <li>
+    <p>Now create your new WCF Application project on Visual Studio. Remember tho choose .NET Framework 4</p>
+
+    <p><img src="https://res.cloudinary.com/tapanila-net/image/upload/h_207,w_300/v1388360870/CreateNewWCFServiceProject1_ifqzip.png" alt="Create new wcf service" /></p>
+  </li>
+  <li>
+    <p>Right click your project and choose add reference</p>
+
+    <p><img src="https://res.cloudinary.com/tapanila-net/image/upload/h_300,w_169/v1388360716/AddReference_r1wvzq.png" alt="Add reference" /></p>
+  </li>
+  <li>
+    <p>Search for Azure and check Azure.StorageClient and click okay</p>
+
+    <p><img src="https://res.cloudinary.com/tapanila-net/image/upload/h_225,w_300/v1388360715/ManageReferencesAzureStorage_eyysez.png" alt="Add reference to Azure Storage" /></p>
+  </li>
+  <li>
+    <p>Edit IService1.cs</p>
+
+    <script src="https://gist.github.com/3270985.js"> </script>
+  </li>
+  <li>
+    <p>Edit Service1.svc</p>
+
+    <script src="https://gist.github.com/3271026.js"> </script>
+  </li>
+  <li>
+    <p>Right click your project and choose publish</p>
+
+    <p><img src="https://res.cloudinary.com/tapanila-net/image/upload/h_300,w_225/v1388360869/PublishingWCFService_tqlvsn.png" alt="Publish WCF service" /></p>
+  </li>
+  <li>
+    <p>Choose import and then browse to the file you downloaded from Azure Dashboard</p>
+
+    <p><img src="http://res.cloudinary.com/tapanila-net/image/upload/c_scale,w_300/v1388360877/ImportPublishProfile_euhmym.png" alt="Import publish profile" /></p>
+  </li>
+  <li>
+    <p>Now just click publish</p>
+
+    <p><img src="http://res.cloudinary.com/tapanila-net/image/upload/c_scale,w_300/v1388360874/PublishWebApplication_a5ool5.png" alt="Publish web application" /></p>
+  </li>
+  <li>
+    <p>Enjoy of your new service</p>
+
+    <p><img src="http://res.cloudinary.com/tapanila-net/image/upload/c_scale,w_300/v1388360867/PublishedWCFService_l8gvb6.png" alt="Published WCF service" /></p>
+  </li>
 </ol>
 
       <hr />
