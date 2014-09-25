@@ -273,6 +273,17 @@ If you have Runtime/Server issues when you have deployed this to Azure follow th
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
+<script type="text/javascript">
+    window.appInsights=window.appInsights||function(ai){
+        function f(t){ai[t]=function(){var i=arguments;ai.queue.push(function(){ai[t].apply(ai,i)})}}
+        var t=document,r="script",u=t.createElement(r),i;for(u.src=ai.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",t.getElementsByTagName(r)[0].parentNode.appendChild(u),ai.cookie=t.cookie,ai.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)f("track"+i.pop());
+        return ai;
+    }({
+        iKey:"d78600bf-1e0a-4d11-b19b-99de13833064"
+    });
+
+    appInsights.trackPageView();
+</script>
 
 
   
