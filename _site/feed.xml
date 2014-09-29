@@ -4,13 +4,102 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="https://tapanila.net/feed.xml" />
 <link rel="alternate" type="text/html" href="https://tapanila.net" />
-<updated>2014-09-28T19:11:16+02:00</updated>
+<updated>2014-09-29T23:36:54+02:00</updated>
 <id>https://tapanila.net/</id>
 <author>
   <name>Teemu Tapanila</name>
   <uri>https://tapanila.net/</uri>
   <email>teemu@tapanila.net</email>
 </author>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Windows Phone Web Debugging]]></title>
+  <link rel="alternate" type="text/html" href="https://tapanila.net/windows-phone-web-debugging/" />
+  <id>https://tapanila.net/windows-phone-web-debugging</id>
+  <published>2014-09-29T00:53:00+02:00</published>
+  <updated>2014-09-29T00:53:00+02:00</updated>
+  <author>
+    <name></name>
+    <uri>https://tapanila.net</uri>
+    
+  </author>
+  <content type="html">&lt;p&gt;Sometimes you need to see what kind of packages your Windows Phone is sending and receiving. This guide is going to show how to do that using free and my favourite tool called &lt;a href=&quot;http://www.telerik.com/fiddler&quot;&gt;Fiddler&lt;/a&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Install &lt;a href=&quot;http://www.telerik.com/download/fiddler&quot;&gt;Fiddler&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Start fiddler and open settings&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_610/v1412000536/Fiddler_options_xhoh5z.png&quot; alt=&quot;Starting fiddler and opening settings&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Go to “HTTPS” tab and make sure you have checked Capture and Decrypt checkboxes&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_610/v1412000536/Fiddler_HTTPS_options_yam7mt.png&quot; alt=&quot;Fiddler HTTPS settings&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Go to “Connections” tab and check “Allow remote computers to connect” and change your listens on port to 8889 (Screenshot)&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_610/v1412000536/Fiddler_Connections_options_uzhddx.png&quot; alt=&quot;Fiddler settings Connections tab&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Check your computer ip address from connection icon (mine is 172.16.0.34)&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_610/v1412000536/Fiddler_IP_address_hetw9g.png&quot; alt=&quot;Fiddler network connection status&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Connect your phone to same network as your computer&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_610/v1412025817/Windows_Phone_Wifi_Networks_nmauvr.png&quot; alt=&quot;Windows Phone wifi network list&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Open your browser and go to web address 172.16.0.34:8889 (Use your own IP from point 5)&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_610/v1412025815/Fiddler_Echo_Page_eyvvwz.png&quot; alt=&quot;Fiddler echo service on Windows Phone&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Click download the FiddlerRoot certificate&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Click Open&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_610/v1412025815/Downloading_fiddler_root_certificate_adqskz.png&quot; alt=&quot;Downloading fiddler root certificate on Windows Phone&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Click Install&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_610/v1412025815/Installing_fiddler_root_certificate_m7rb0t.png&quot; alt=&quot;Installing fiddler root certificate on Windows Phone&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Click OK&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_610/v1412025815/Fiddler_root_certificate_installed_successfully_wjemln.png&quot; alt=&quot;Succesfully installed fiddler root certificate&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Go to your wifi list on settings and click the name of connected wifi network&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_610/v1412025817/Windows_Phone_Wifi_Networks_nmauvr.png&quot; alt=&quot;Windows Phone wifi network list&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Enable proxy and type your computer ip to server and 8889 to port&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_610/v1412025818/Windows_Phone_Wifi_proxy_settings_nrx6nd.png&quot; alt=&quot;Windows Phone Wifi Proxy Settings&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Open browser on phone and browse to tapanila.net&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_610/v1412025817/Tapanila_net_on_Windows_Phone_vw0cfq.png&quot; alt=&quot;Tapanila.net on Windows Phone browser&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;See the request on your computer at Fiddler&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_610/v1412000537/Fiddler_data_from_Tapanila_net_howqlm.png&quot; alt=&quot;Fiddler data on request for Tapanila.net&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://tapanila.net/windows-phone-web-debugging/&quot;&gt;Windows Phone Web Debugging&lt;/a&gt; was originally published by  at &lt;a href=&quot;https://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on September 29, 2014.&lt;/p&gt;</content>
+</entry>
 
 
   
@@ -741,60 +830,6 @@ If you have Runtime/Server issues when you have deployed this to Azure follow th
 &lt;script type=&quot;text/javascript&quot; src=&quot;https://gist.github.com/4594903.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
 
   &lt;p&gt;&lt;a href=&quot;https://tapanila.net/fetching-tweets-by-multiple-hashtags-using-windows-azure-mobile-services/&quot;&gt;Fetching Tweets by multiple hashtags using Windows Azure Mobile Services&lt;/a&gt; was originally published by  at &lt;a href=&quot;https://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on January 23, 2013.&lt;/p&gt;</content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[Fetching Tweets using Windows Azure Mobile Services]]></title>
-  <link rel="alternate" type="text/html" href="https://tapanila.net/fetching-tweets-using-windows-azure-mobile-services/" />
-  <id>https://tapanila.net/fetching-tweets-using-windows-azure-mobile-services</id>
-  <published>2013-01-17T13:12:00+01:00</published>
-  <updated>2013-01-17T13:12:00+01:00</updated>
-  <author>
-    <name></name>
-    <uri>https://tapanila.net</uri>
-    
-  </author>
-  <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.windowsazure.com/en-us/develop/mobile/&quot;&gt;Windows Azure Mobile Services&lt;/a&gt; is one the newest things that have been added to Windows Azure. It’s goal is to enable front-end developers easily to create a backend. It seriously is easy and require just few click and you are done with creating backend. This tutorial will focus on how to use Scheduler of Mobile Services to fetch data from twitter and then store it into Mobile Services.
-&lt;!--more--&gt;&lt;/p&gt;
-&lt;ol&gt;
-	&lt;li&gt;Log into the &lt;a href=&quot;https://manage.windowsazure.com/&quot;&gt;Management Portal&lt;/a&gt;.&lt;/li&gt;
-	&lt;li&gt;At the bottom left of page click NEW.
-&lt;img class=&quot;alignnone size-full wp-image-1431&quot; alt=&quot;New&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360699/New_bnsjkq.png&quot; width=&quot;123&quot; height=&quot;60&quot; /&gt;&lt;/li&gt;
-	&lt;li&gt;Choose Computing -&amp;gt; Mobile Service -&amp;gt; Create
-&lt;img class=&quot;alignnone size-full wp-image-1441&quot; alt=&quot;CreateMobileServiceFromPanel&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360698/CreateMobileServiceFromPanel_uctr0g.png&quot; width=&quot;1111&quot; height=&quot;300&quot; /&gt;&lt;/li&gt;
-	&lt;li&gt;This dialog will popup
-&lt;img class=&quot;alignnone size-full wp-image-1451&quot; alt=&quot;CreateMobileServiceDialogOne&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360696/CreateMobileServiceDialogOne_coprdj.png&quot; width=&quot;680&quot; height=&quot;446&quot; /&gt;&lt;/li&gt;
-	&lt;li&gt;Next step will look like this if you chose to create new SQL database instance
-&lt;img class=&quot;alignnone size-full wp-image-1461&quot; alt=&quot;CreateMobileServiceDialogTwo&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360695/CreateMobileServiceDialogTwo_bwknpi.png&quot; width=&quot;677&quot; height=&quot;450&quot; /&gt;&lt;/li&gt;
-	&lt;li&gt;After that step your backend is getting provisioned and will be functional in few minutes&lt;/li&gt;
-	&lt;li&gt;Lets start by viewing the menu of your new service
-&lt;img class=&quot;alignnone size-full wp-image-1471&quot; alt=&quot;MobilSeriveMenu&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360694/MobilSeriveMenu_sosngw.png&quot; width=&quot;924&quot; height=&quot;222&quot; /&gt;&lt;/li&gt;
-	&lt;li&gt;Navigate to DATA section
-&lt;img class=&quot;alignnone size-full wp-image-1481&quot; alt=&quot;MobileServiceDataEmpty&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360693/MobileServiceDataEmpty_dscfor.png&quot; width=&quot;725&quot; height=&quot;123&quot; /&gt;&lt;/li&gt;
-	&lt;li&gt;Choose add a table and give it a name &quot;Tweets&quot;
-&lt;img class=&quot;alignnone size-full wp-image-1491&quot; alt=&quot;MobileServiceCreateTable&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360692/MobileServiceCreateTable_oakikh.png&quot; width=&quot;645&quot; height=&quot;559&quot; /&gt;&lt;/li&gt;
-	&lt;li&gt;Navigate to SCHEDULER
-&lt;img class=&quot;alignnone size-full wp-image-1501&quot; alt=&quot;MobileServiceSchedulerEmpty&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360665/MobileServiceSchedulerEmpty_yu6b1j.png&quot; width=&quot;616&quot; height=&quot;135&quot; /&gt;&lt;/li&gt;
-	&lt;li&gt;Choose create a scheduled job and give it a name &quot;getTweets&quot;
-&lt;img class=&quot;alignnone size-full wp-image-1511&quot; alt=&quot;MobileServiceCreateScheduledJob&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360663/MobileServiceCreateScheduledJob_w4jwtl.png&quot; width=&quot;621&quot; height=&quot;453&quot; /&gt;&lt;/li&gt;
-	&lt;li&gt;Open the job by clicking the name
-&lt;img class=&quot;alignnone size-full wp-image-1521&quot; alt=&quot;MobileServiceScheduledJob&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360662/MobileServiceScheduledJob_lcpuwz.png&quot; width=&quot;900&quot; height=&quot;37&quot; /&gt;&lt;/li&gt;
-	&lt;li&gt;Open Script
-&lt;img class=&quot;alignnone size-full wp-image-1531&quot; alt=&quot;MobileServiceSchedulerScript&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360661/MobileServiceSchedulerScript_dbqyrd.png&quot; width=&quot;1089&quot; height=&quot;359&quot; /&gt;&lt;/li&gt;
-	&lt;li&gt;Copy paste the code from below and choose save from bottom
-&lt;img class=&quot;alignnone size-full wp-image-1541&quot; alt=&quot;MobileServiceSchedulerScriptSave&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360660/MobileServiceSchedulerScriptSave_xgjhf9.png&quot; width=&quot;890&quot; height=&quot;228&quot; /&gt;&lt;/li&gt;
-	&lt;li&gt;Click run once from bottom
-&lt;img class=&quot;alignnone size-full wp-image-1551&quot; alt=&quot;MobileServiceSchedulerScriptRunOnce&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360659/MobileServiceSchedulerScriptRunOnce_iv5yt5.png&quot; width=&quot;589&quot; height=&quot;202&quot; /&gt;&lt;/li&gt;
-	&lt;li&gt;Go back to DATA and see the tweets containing #WindowsAzure in the table
-&lt;img class=&quot;alignnone size-full wp-image-1561&quot; alt=&quot;MobileServiceDataTweets&quot; src=&quot;https://res.cloudinary.com/tapanila-net/image/upload/v1388360658/MobileServiceDataTweets_ivaose.png&quot; width=&quot;1076&quot; height=&quot;367&quot; /&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;script src=&quot;https://gist.github.com/tapanila/4594903.js&quot;&gt;&lt;/script&gt;
-
-
-  &lt;p&gt;&lt;a href=&quot;https://tapanila.net/fetching-tweets-using-windows-azure-mobile-services/&quot;&gt;Fetching Tweets using Windows Azure Mobile Services&lt;/a&gt; was originally published by  at &lt;a href=&quot;https://tapanila.net&quot;&gt;Tapanila.net&lt;/a&gt; on January 17, 2013.&lt;/p&gt;</content>
 </entry>
 
 </feed>

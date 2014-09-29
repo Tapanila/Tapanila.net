@@ -5,8 +5,8 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Foursquare Venues API &#8211; Tapanila.net</title>
-<meta name="description" content="Foursquare has great API and documentation about it. Nice thing is that you don’t need to authenticate to use most of the API. But even then you will need to have registered for Foursquare developer. If you need to authenticate foursquare is also using OAuth if you need to authenticate check this.
+<title>Windows Phone Web Debugging &#8211; Tapanila.net</title>
+<meta name="description" content="Sometimes you need to see what kind of packages your Windows Phone is sending and receiving. This guide is going to show how to do that using free and my favourite tool called Fiddler
 
 ">
 <meta name="keywords" content="">
@@ -14,8 +14,8 @@
   
 
 <!-- Twitter Cards -->
-<meta name="twitter:title" content="Foursquare Venues API">
-<meta name="twitter:description" content="Foursquare has great API and documentation about it. Nice thing is that you don’t need to authenticate to use most of the API. But even then you will need to have registered for Foursquare developer. If you need to authenticate foursquare is also using OAuth if you need to authenticate check this.
+<meta name="twitter:title" content="Windows Phone Web Debugging">
+<meta name="twitter:description" content="Sometimes you need to see what kind of packages your Windows Phone is sending and receiving. This guide is going to show how to do that using free and my favourite tool called Fiddler
 
 ">
 <meta name="twitter:site" content="@TapanilaT">
@@ -27,18 +27,18 @@
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Foursquare Venues API">
-<meta property="og:description" content="Foursquare has great API and documentation about it. Nice thing is that you don’t need to authenticate to use most of the API. But even then you will need to have registered for Foursquare developer. If you need to authenticate foursquare is also using OAuth if you need to authenticate check this.
+<meta property="og:title" content="Windows Phone Web Debugging">
+<meta property="og:description" content="Sometimes you need to see what kind of packages your Windows Phone is sending and receiving. This guide is going to show how to do that using free and my favourite tool called Fiddler
 
 ">
-<meta property="og:url" content="https://tapanila.net/foursquare-venues-api/">
+<meta property="og:url" content="https://tapanila.net/windows-phone-web-debugging/">
 <meta property="og:site_name" content="Tapanila.net">
 
 
 
 
 
-<link rel="canonical" href="https://tapanila.net/foursquare-venues-api/">
+<link rel="canonical" href="https://tapanila.net/windows-phone-web-debugging/">
 <link href="https://tapanila.net/feed.xml" type="application/atom+xml" rel="alternate" title="Tapanila.net Feed">
 <link rel="author" href="http://plus.google.com/+TeemuTapanila?rel=author">
 
@@ -132,21 +132,81 @@
   <article>
     <div class="headline-wrap">
       
-        <h1><a href="https://tapanila.net/foursquare-venues-api/" rel="bookmark" title="Foursquare Venues API">Foursquare Venues API</a></h1>
+        <h1><a href="https://tapanila.net/windows-phone-web-debugging/" rel="bookmark" title="Windows Phone Web Debugging">Windows Phone Web Debugging</a></h1>
       
     </div><!--/ .headline-wrap -->
     <div class="article-wrap">
-      <p><a href="http://foursquare.com/">Foursquare</a> has great API and <a href="https://developer.foursquare.com/">documentation</a> about it. Nice thing is that you don’t need to authenticate to use most of the API. But even then you will need to have registered for Foursquare developer. If you need to authenticate foursquare is also using OAuth if you need to authenticate check <a title="OAuth on Windows 8" href="http://www.tapanila.net/oauth-on-windows-8/">this</a>.<!--more--></p>
+      <p>Sometimes you need to see what kind of packages your Windows Phone is sending and receiving. This guide is going to show how to do that using free and my favourite tool called <a href="http://www.telerik.com/fiddler">Fiddler</a></p>
 
-<p>Now the API I’m very interested is venues. To use it you don’t need to authenticate. So I will just use it without authenticating. So to use it I just download the json information from the API where I pass latitude and longitude as parameters and then use <a title="Consuming Json API easy" href="http://www.tapanila.net/consuming-json-api-easily/">JSON.net and JSON2CSHARP</a> to parse it into nice objects.
-Classes from JSON2CHSARP:
-<script type="text/javascript" src="https://gist.github.com/4185979.js">// &lt;![CDATA[</script></p>
+<ol>
+  <li>Install <a href="http://www.telerik.com/download/fiddler">Fiddler</a></li>
+  <li>
+    <p>Start fiddler and open settings</p>
 
-<p>// ]]&gt;&lt;/script&gt;
-Rest of the code:
-<script type="text/javascript" src="https://gist.github.com/4185984.js">// &lt;![CDATA[</script></p>
+    <p><img src="https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_610/v1412000536/Fiddler_options_xhoh5z.png" alt="Starting fiddler and opening settings" /></p>
+  </li>
+  <li>
+    <p>Go to “HTTPS” tab and make sure you have checked Capture and Decrypt checkboxes</p>
 
-<p>// ]]&gt;&lt;/script&gt;</p>
+    <p><img src="https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_610/v1412000536/Fiddler_HTTPS_options_yam7mt.png" alt="Fiddler HTTPS settings" /></p>
+  </li>
+  <li>
+    <p>Go to “Connections” tab and check “Allow remote computers to connect” and change your listens on port to 8889 (Screenshot)</p>
+
+    <p><img src="https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_610/v1412000536/Fiddler_Connections_options_uzhddx.png" alt="Fiddler settings Connections tab" /></p>
+  </li>
+  <li>
+    <p>Check your computer ip address from connection icon (mine is 172.16.0.34)</p>
+
+    <p><img src="https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_610/v1412000536/Fiddler_IP_address_hetw9g.png" alt="Fiddler network connection status" /></p>
+  </li>
+  <li>
+    <p>Connect your phone to same network as your computer</p>
+
+    <p><img src="https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_610/v1412025817/Windows_Phone_Wifi_Networks_nmauvr.png" alt="Windows Phone wifi network list" /></p>
+  </li>
+  <li>
+    <p>Open your browser and go to web address 172.16.0.34:8889 (Use your own IP from point 5)</p>
+
+    <p><img src="https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_610/v1412025815/Fiddler_Echo_Page_eyvvwz.png" alt="Fiddler echo service on Windows Phone" /></p>
+  </li>
+  <li>Click download the FiddlerRoot certificate</li>
+  <li>
+    <p>Click Open</p>
+
+    <p><img src="https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_610/v1412025815/Downloading_fiddler_root_certificate_adqskz.png" alt="Downloading fiddler root certificate on Windows Phone" /></p>
+  </li>
+  <li>
+    <p>Click Install</p>
+
+    <p><img src="https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_610/v1412025815/Installing_fiddler_root_certificate_m7rb0t.png" alt="Installing fiddler root certificate on Windows Phone" /></p>
+  </li>
+  <li>
+    <p>Click OK</p>
+
+    <p><img src="https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_610/v1412025815/Fiddler_root_certificate_installed_successfully_wjemln.png" alt="Succesfully installed fiddler root certificate" /></p>
+  </li>
+  <li>
+    <p>Go to your wifi list on settings and click the name of connected wifi network</p>
+
+    <p><img src="https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_610/v1412025817/Windows_Phone_Wifi_Networks_nmauvr.png" alt="Windows Phone wifi network list" /></p>
+  </li>
+  <li>
+    <p>Enable proxy and type your computer ip to server and 8889 to port</p>
+
+    <p><img src="https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_610/v1412025818/Windows_Phone_Wifi_proxy_settings_nrx6nd.png" alt="Windows Phone Wifi Proxy Settings" /></p>
+  </li>
+  <li>
+    <p>Open browser on phone and browse to tapanila.net</p>
+
+    <p><img src="https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_610/v1412025817/Tapanila_net_on_Windows_Phone_vw0cfq.png" alt="Tapanila.net on Windows Phone browser" /></p>
+  </li>
+  <li>
+    <p>See the request on your computer at Fiddler</p>
+
+    <p><img src="https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_100,w_610/v1412000537/Fiddler_data_from_Tapanila_net_howqlm.png" alt="Fiddler data on request for Tapanila.net" /></p>
+  </li>
+</ol>
 
       <hr />
       <footer role="contentinfo">
@@ -175,7 +235,7 @@ Rest of the code:
 
 
         </div>
-        <p class="byline"><strong>Foursquare Venues API</strong> was published on <time datetime="2012-12-12T07:00:00+01:00">December 12, 2012</time>.</p>
+        <p class="byline"><strong>Windows Phone Web Debugging</strong> was published on <time datetime="2014-09-29T00:53:00+02:00">September 29, 2014</time>.</p>
       </footer>
     </div><!-- /.article-wrap -->
   
@@ -189,11 +249,11 @@ Rest of the code:
   <h4>You might also enjoy <small class="pull-right">(<a href="https://tapanila.net/posts/">View all posts</a>)</small></h4>
     <ul>
     
-      <li><a href="https://tapanila.net/windows-phone-web-debugging/" title="Windows Phone Web Debugging">Windows Phone Web Debugging</a></li>
-    
       <li><a href="https://tapanila.net/windows-phone-8-with-caliburn-micro-data-binding/" title="Windows Phone 8 with Caliburn Micro Data Binding">Windows Phone 8 with Caliburn Micro Data Binding</a></li>
     
       <li><a href="https://tapanila.net/windows-phone-8-with-caliburn-micro/" title="Windows Phone 8 with Caliburn Micro">Windows Phone 8 with Caliburn Micro</a></li>
+    
+      <li><a href="https://tapanila.net/facebook-single-sign-on-on-windows-phone-8-with-windows-azure-mobile-services/" title="Facebook Single sign-on on Windows Phone 8 with Windows Azure Mobile Services">Facebook Single sign-on on Windows Phone 8 with Windows Azure Mobile Services</a></li>
     
     </ul>
     <hr />
