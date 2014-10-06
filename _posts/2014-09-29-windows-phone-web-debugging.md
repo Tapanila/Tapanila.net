@@ -6,7 +6,7 @@ author: Teemu
 comments: true
 categories: [Windows Phone 8, Fiddler, Debugging]
 ---
-Sometimes you need to see what kind of packages your Windows Phone is sending and receiving. This guide is going to show how to do that using free and my favourite tool called [Fiddler](http://www.telerik.com/fiddler)
+Sometimes you need to see what kind of packages your Windows Phone is sending and receiving. This guide is going to show how to do that using tool called [Fiddler](http://www.telerik.com/fiddler)
 
 1. Install [Fiddler](http://www.telerik.com/download/fiddler)
 2. Start fiddler and open settings
