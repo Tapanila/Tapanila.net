@@ -24,7 +24,7 @@ ClearDB itself is ready to offer you more if you want. Here's a guide how to get
    ![Creating free azure mysql database](https://res.cloudinary.com/tapanila-net/image/upload/q_100,w_610/v1388360787/CreateAzureDatabase_ynzt76.png)
 5. Choose region and click next
 
-   ![Azure MySQL database region](https://res.cloudinary.com/tapanila-net/image/upload/q_100,w_610/v1388360786/CreateAzureDatabaseRegion_lihj4x.pn)
+   ![Azure MySQL database region](https://res.cloudinary.com/tapanila-net/image/upload/q_100,w_610/v1388360786/CreateAzureDatabaseRegion_lihj4x.png)
 6. Now you are done and can see your Database information.
 
    ![Database creation completed](https://res.cloudinary.com/tapanila-net/image/upload/q_100,w_610/v1388360785/CreateAzureDatabaseComplete_xv4ilu.png)
