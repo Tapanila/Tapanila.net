@@ -1,6 +1,7 @@
 # Site wide configuration
 
 title:            Tapanila.net
+name:             Tapanila.net
 locale:           en_US
 url:              https://tapanila.net
 
