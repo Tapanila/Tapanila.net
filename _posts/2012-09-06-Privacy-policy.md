@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Tapanila privacy policy
-date: 2016-09-06 15:20
+date: 2012-09-06 15:20
 author: Teemu
 comments: false
 categories: []
