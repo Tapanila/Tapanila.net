@@ -29,13 +29,12 @@ kramdown:
 owner:
   name: Teemu Tapanila
   avatar: https://images.ctfassets.net/dife9bku7g06/6aXLdREZzsyFDuD19SGruS/be76952260014995ba6106e0ddaa364a/teemu_465.jpeg?w=465&h=465&q=100&fm=webp
-  bio: "CTO of Mallow, Speaker"
+  bio: "CTO of Mallow"
   email: teemu@tapanila.net
   disqus-shortname: tapanilanetblog
   twitter: TapanilaT
-  facebook: Teemu.Tapanila
   google:
-    plus: TeemuTapanila
+    plus:
     analytics: UA-30022509-1
     verify: 
     ad-client: 
