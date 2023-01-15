@@ -1,9 +1,9 @@
 ---
 layout: home
-excerpt: "Coder, Blogger and Speaker"
-tags: [Jekyll, Blog, Microsoft Azure, Teemu Tapanila, .NET, Speaker]
+excerpt: "CTO, Speaker and Azure Architect"
+tags: [Jekyll, Blog, Microsoft Azure, Teemu Tapanila, Azure, Architecture, Mallow, Speaker]
 image:
-  feature: https://images.ctfassets.net/dife9bku7g06/6aXLdREZzsyFDuD19SGruS/be76952260014995ba6106e0ddaa364a/teemu_465.jpeg?w=465&h=465&q=100&fm=webp
+  feature: https://media.licdn.com/dms/image/C4D22AQHOJyNeRjXtgA/feedshare-shrink_800/0/1673537080149?e=1676505600&v=beta&t=dJqxSyfaj8Jw7J_1D73IjRum42jrTPymC_Ik5RDn45Y
   credit:
   creditlink:
 ---
