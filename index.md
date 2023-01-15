@@ -3,7 +3,7 @@ layout: home
 excerpt: "Coder, Blogger and Speaker"
 tags: [Jekyll, Blog, Microsoft Azure, Teemu Tapanila, .NET, Speaker]
 image:
-  feature: https://res.cloudinary.com/tapanila-net/image/upload/c_scale,q_50,w_1080/v1401020776/Road_ozpti4.jpg
+  feature: https://images.ctfassets.net/dife9bku7g06/6aXLdREZzsyFDuD19SGruS/be76952260014995ba6106e0ddaa364a/teemu_465.jpeg?w=465&h=465&q=100&fm=webp
   credit:
   creditlink:
 ---

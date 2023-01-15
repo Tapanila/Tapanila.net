@@ -28,8 +28,8 @@ kramdown:
 # Site owner
 owner:
   name: Teemu Tapanila
-  avatar: https://res.cloudinary.com/tapanila-net/image/upload/c_scale,h_186,q_80/v1411477391/Teemu%20Tapanila.jpg
-  bio: "Microsoft Azure MVP and Windows Phone developer"
+  avatar: https://images.ctfassets.net/dife9bku7g06/6aXLdREZzsyFDuD19SGruS/be76952260014995ba6106e0ddaa364a/teemu_465.jpeg?w=465&h=465&q=100&fm=webp
+  bio: "CTO of Mallow, Speaker"
   email: teemu@tapanila.net
   disqus-shortname: tapanilanetblog
   twitter: TapanilaT
@@ -42,7 +42,7 @@ owner:
     ad-slot: 
   bing-verify: 6D281ABEF9F49AD4A241F6391ADC2422
   github: Tapanila
-  stackoverflow: 797074/teemu-tapanila
+  stackoverflow: #797074/teemu-tapanila
   linkedin: teemutapanila
   instagram: #username
   lastfm: #username
