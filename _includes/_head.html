@@ -23,31 +23,93 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="{{ site.url }}/assets/css/main.css">
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
 <meta http-equiv="cleartype" content="on">
 
 <!-- HTML5 Shiv and Media Query Support -->
 <!--[if lt IE 9]>
-	<script src="{{ site.url }}/assets/js/vendor/html5shiv.min.js"></script>
-	<script src="{{ site.url }}/assets/js/vendor/respond.min.js"></script>
+	<script src="{{ '/assets/js/vendor/html5shiv.min.js' | relative_url }}"></script>
+	<script src="{{ '/assets/js/vendor/respond.min.js' | relative_url }}"></script>
 <![endif]-->
 
 <!-- Modernizr -->
-<script src="{{ site.url }}/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+<script src="{{ '/assets/js/vendor/modernizr-2.7.1.custom.min.js' | relative_url }}"></script>
 
 <link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
 
 <!-- Icons -->
 <!-- 16x16 -->
-<link rel="shortcut icon" href="{{ site.url }}/favicon.ico">
+<link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}">
 <!-- 32x32 -->
-<link rel="shortcut icon" href="{{ site.url }}/favicon.png">
+<link rel="shortcut icon" href="{{ '/favicon.png' | relative_url }}">
 <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
-<link rel="apple-touch-icon-precomposed" href="{{ site.url }}/images/apple-touch-icon-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="{{ '/images/apple-touch-icon-precomposed.png' | relative_url }}">
 <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.url }}/images/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ '/images/apple-touch-icon-72x72-precomposed.png' | relative_url }}">
 <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.url }}/images/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ '/images/apple-touch-icon-114x114-precomposed.png' | relative_url }}">
 <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.url }}/images/apple-touch-icon-144x144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ '/images/apple-touch-icon-144x144-precomposed.png' | relative_url }}">
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Teemu Tapanila",
+  "jobTitle": "CTO & Principal Architect",
+  "description": "Technology leader passionate about cloud computing, software architecture, and building great teams. CTO at Mallow, Technical Specialist at Saura.health, and Technical Advisor at Linear.fi.",
+  "url": "{{ site.url }}",
+  "image": "{{ site.owner.avatar }}",
+  "email": "{{ site.owner.email }}",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Helsinki",
+    "addressCountry": "Finland"
+  },
+  "worksFor": [
+    {
+      "@type": "Organization",
+      "name": "Mallow",
+      "url": "https://mallow.fi",
+      "description": "Microsoft Azure cloud solutions specialist"
+    },
+    {
+      "@type": "Organization", 
+      "name": "Saura.health",
+      "url": "https://saura.health",
+      "description": "Finnish health technology startup"
+    },
+    {
+      "@type": "Organization",
+      "name": "Linear.fi", 
+      "url": "https://linear.fi",
+      "description": "Real estate technology company"
+    }
+  ],
+  "knowsAbout": [
+    "Microsoft Azure",
+    "Cloud Computing",
+    "Software Architecture", 
+    "Technology Leadership",
+    "Azure Functions",
+    "Docker",
+    "Kubernetes",
+    "DevOps",
+    "Software Development",
+    "Azure DevOps"
+  ],
+  "sameAs": [
+    "https://linkedin.com/in/teemutapanila",
+    "https://twitter.com/TapanilaT", 
+    "https://github.com/Tapanila",
+    "https://sessionize.com/teemu-tapanila/"
+  ],
+  "alumniOf": {
+    "@type": "Organization",
+    "name": "Microsoft MVP Program",
+    "description": "Microsoft Azure MVP"
+  }
+}
+</script>

@@ -4,6 +4,7 @@ title:            Tapanila.net
 name:             Tapanila.net
 locale:           en_US
 url:              https://tapanila.net
+baseurl:          ""
 
 
 # Jekyll configuration
@@ -14,8 +15,9 @@ highlighter: rouge
 sass:
   sass_dir: _sass
   style: compressed
-gems:
+plugins:
   - jekyll-sitemap
+  - jekyll-gist
 
 kramdown:
   auto_ids: true
@@ -31,25 +33,10 @@ owner:
   avatar: https://images.ctfassets.net/dife9bku7g06/6aXLdREZzsyFDuD19SGruS/be76952260014995ba6106e0ddaa364a/teemu_465.jpeg?w=465&h=465&q=100&fm=webp
   bio: "CTO of Mallow"
   email: teemu@tapanila.net
-  disqus-shortname: tapanilanetblog
   twitter: TapanilaT
-  google:
-    plus:
-    analytics: UA-30022509-1
-    verify: 
-    ad-client: 
-    ad-slot: 
-  bing-verify: 6D281ABEF9F49AD4A241F6391ADC2422
   github: Tapanila
   stackoverflow: #797074/teemu-tapanila
   linkedin: teemutapanila
-  instagram: #username
-  lastfm: #username
-  tumblr: #username
-  pinterest: #username
-  foursquare: #username
-  steam: #username
-  dribbble: #username
 
 include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "*.ps1","portableJekyll"]
+exclude: ["node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "Dockerfile", "docker-compose.yml", "_config.dev.yml", "_templates", "vendor"]

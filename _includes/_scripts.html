@@ -1,34 +1,3 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="{{ site.url }}/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-<script src="{{ site.url }}/assets/js/scripts.min.js"></script>
-{% if site.owner.google.analytics %}
-<!-- Asynchronous Google Analytics snippet -->
-<script>
-  var _gaq = _gaq || [];
-  var pluginUrl = 
- '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
-  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
-  _gaq.push(['_setAccount', '{{ site.owner.google.analytics }}']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
-<script type="text/javascript">
-    window.appInsights=window.appInsights||function(ai){
-        function f(t){ai[t]=function(){var i=arguments;ai.queue.push(function(){ai[t].apply(ai,i)})}}
-        var t=document,r="script",u=t.createElement(r),i;for(u.src=ai.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",t.getElementsByTagName(r)[0].parentNode.appendChild(u),ai.cookie=t.cookie,ai.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)f("track"+i.pop());
-        return ai;
-    }({
-        iKey:"d78600bf-1e0a-4d11-b19b-99de13833064"
-    });
-
-    appInsights.trackPageView();
-</script>
-{% endif %}
-{% if page.comments %}
-  {% include _disqus_comments.html %}
-{% endif %}
+<script>window.jQuery || document.write('<script src="{{ "/assets/js/vendor/jquery-1.9.1.min.js" | relative_url }}"><\/script>')</script>
+<script src="{{ '/assets/js/scripts.min.js' | relative_url }}"></script>

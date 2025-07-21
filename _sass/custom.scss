@@ -1,3 +1,12 @@
 ul, ol {
 	-webkit-padding-start: 20px;
 }
+
+// Hero image height customization
+.image-wrap {
+	img {
+		max-height: 300px;
+		object-fit: cover;
+		object-position: center;
+	}
+}
